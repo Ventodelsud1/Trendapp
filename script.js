@@ -1,258 +1,621 @@
 
 const translations = {
-  en: {
-    navAbout: "About",
-    navCompanies: "Companies",
-    navVision: "Our vision",
-    navContact: "Contact",
-    openTrendapp: "Open TrendApp ↗",
 
-    heroEyebrow: "A DIGITAL PRODUCT GROUP",
-    heroTitle: "We shape<br>what comes <em>next.</em>",
-    heroText: "A group focused on building useful digital products, meaningful services and better everyday experiences.",
+    az: {
+        navHome: "Ana səhifə",
+        navPlatforms: "Platformalar",
+        navAbout: "Haqqımızda",
+        navContact: "Əlaqə",
+        contactButton: "Qeydiyyat",
+        heroLabel: "TRENDAPP GROUP · RƏQƏMSAL HƏLLƏR",
+        heroTitle: "Layihələrimiz bir platformada.",
+        heroText: "Müasir texnologiyalar, innovativ yanaşma və müxtəlif sahələr üçün rəqəmsal həllər.",
+        heroButton: "Platformalara bax",
+        introLabel: "TRENDAPP GROUP",
+        introTitle: "Texnologiya ilə yeni imkanlar yaradırıq.",
+        introText: "Bizneslərin və insanların ehtiyaclarına uyğun proqram təminatı hazırlayır, ideyaları işlək rəqəmsal məhsullara çeviririk.",
+        learnMore: "Daha ətraflı →",
+        directionsLabel: "NƏ İŞLƏYİRİK?",
+        directionsTitle: "Fərqli sahələr üçün texnologiya.",
+        directionsText: "Müxtəlif ehtiyaclara uyğun müasir proqram təminatı və rəqəmsal məhsullar.",
+        direction1Title: "Proqram təminatı",
+        direction1Text: "Biznes və təşkilatlar üçün xüsusi proqram təminatının hazırlanması.",
+        direction2Title: "Veb platformalar",
+        direction2Text: "Müasir, funksional və istifadəçi dostu veb platformaların yaradılması.",
+        direction3Title: "Süni intellekt",
+        direction3Text: "Süni intellekt texnologiyalarının rəqəmsal məhsullara inteqrasiyası.",
+        direction4Title: "Rəqəmsal sistemlər",
+        direction4Text: "İş proseslərini asanlaşdıran və optimallaşdıran sistemlər.",
+        whyLabel: "NİYƏ TRENDAPP?",
+        whyTitle: "İdeyadan hazır rəqəmsal məhsula qədər.",
+        whyText: "Biz hər layihənin arxasında duran ehtiyacı anlamağa çalışırıq. Məqsədimiz yalnız proqram yazmaq deyil, real problemləri həll edən, rahat və faydalı texnoloji məhsullar yaratmaqdır.",
+        whyButton: "Şirkətimiz haqqında",
+        why1: "Müasir texnologiyalardan istifadə",
+        why2: "Layihəyə uyğun fərdi yanaşma",
+        why3: "İstifadəçi təcrübəsinə diqqət",
+        why4: "Davamlı inkişaf və yenilənmə",
+        previewLabel: "EKOSİSTEMİMİZ",
+        previewTitle: "Rəqəmsal məhsullarımızı kəşf edin.",
+        previewText: "Müxtəlif sahələr üçün hazırladığımız platformalarla tanış olun.",
+        previewButton: "Bütün platformalar →",
+        platformLabel: "MƏHSULLARIMIZ",
+        platformTitle: "Rəqəmsal platformalarımız",
+        platformSubtitle: "Fərqli ehtiyaclar və sahələr üçün hazırlanmış texnoloji həllər.",
+        activePlatform: "AKTİV PLATFORMA",
+        trendShort: "Kompetensiya, koqnitiv qabiliyyət və dil qiymətləndirmə platforması.",
+        openPlatform: "Platformaya keç",
+        newPlatform: "Yeni platforma",
+        newPlatformText: "Yeni rəqəmsal layihəmiz üzərində işləyirik.",
+        comingSoon: "Tezliklə",
+        yourProject: "Sizin layihəniz?",
+        yourProjectText: "Yeni ideyanız və ya əməkdaşlıq təklifiniz varsa, bizimlə əlaqə saxlayın.",
+        contactUs: "Əlaqə saxla",
+        trendTitle: "İnsan potensialını ölçmək üçün texnologiya.",
+        trendDescription: "TrendApp namizədlərin və əməkdaşların peşəkar uyğunluğunu daha obyektiv qiymətləndirmək üçün hazırlanmış rəqəmsal platformadır. Sistem kompetensiya qiymətləndirməsi, koqnitiv qabiliyyət testləri və dil bacarıqlarının yoxlanılmasını bir məkanda birləşdirir. Kamera nəzarətli testlər və süni intellekt dəstəyi ilə hazırlanmış hesabatlar istifadəçilərə və şirkətlərə daha əsaslandırılmış qərarlar verməyə kömək edir.",
+        visitTrend: "TrendApp platformasına daxil ol",
+        aboutLabel: "HAQQIMIZDA",
+        aboutTitle: "Biz kimik?",
+        aboutSubtitle: "İdeyaları rəqəmsal məhsullara çevirən gənc texnologiya şirkəti.",
+        aboutHeading: "Gələcəyin rəqəmsal həllərini bu gündən yaradırıq.",
+        aboutText1: "TrendApp müxtəlif sahələr üçün proqram təminatı və rəqəmsal məhsullar hazırlayan gənc texnologiya şirkətidir. Məqsədimiz real ehtiyacları anlamaq, innovativ ideyaları işlək texnoloji həllərə çevirmək və istifadəçilərin gündəlik işini asanlaşdırmaqdır.",
+        aboutText2: "Biz hər layihəyə fərdi yanaşırıq. Biznes, təhsil, insan resursları və digər sahələr üçün müasir veb platformalar, idarəetmə sistemləri və xüsusi proqram təminatı üzərində işləyirik.",
+        aboutText3: "Bizim üçün texnologiya sadəcə kod deyil. O, problemləri həll etmək, prosesləri optimallaşdırmaq və yeni imkanlar yaratmaq vasitəsidir. Buna görə də dizayn, funksionallıq, təhlükəsizlik və istifadə rahatlığını hər layihənin əsas hissəsi hesab edirik.",
+        value1Title: "İnnovasiya",
+        value1Text: "Yeni ideyalar və müasir texnologiyalarla inkişaf.",
+        value2Title: "Fərdi yanaşma",
+        value2Text: "Hər layihənin ehtiyaclarına uyğun həllər.",
+        value3Title: "Keyfiyyət",
+        value3Text: "Etibarlı, rahat və funksional məhsullar.",
+        contactLabel: "ƏLAQƏ",
+        contactTitle: "Gəlin birlikdə işləyək.",
+        contactSubtitle: "Sualınız, layihə ideyanız və ya əməkdaşlıq təklifiniz var? Bizimlə əlaqə saxlayın.",
+        generalEmail: "Ümumi müraciətlər",
+        supportEmail: "Tani / TestEva dəstəyi",
+        businessEmail: "Əməkdaşlıq və layihələr",
+        contactNoteTitle: "Yeni ideyanız var?",
+        contactNoteText: "Layihəniz haqqında bizə yazın. İdeyanızı müzakirə etmək və uyğun texnoloji həll tapmaqdan məmnun olarıq.",
+        copyright: "Bütün hüquqlar qorunur."
+    },
 
-    aboutKicker: "WHO WE ARE",
-    aboutTitle: "Technology is only powerful when it makes life <em>better.</em>",
-    aboutText: "Trendapp Group brings together digital products and services designed around real people and real needs. We believe in clear thinking, thoughtful technology and long-term value.",
-    discover: "Discover our companies",
+    ru: {
+        navHome: "Главная",
+        navPlatforms: "Платформы",
+        navAbout: "О нас",
+        navContact: "Контакты",
+        contactButton: "Регистрация",
+        heroLabel: "TRENDAPP GROUP · ЦИФРОВЫЕ РЕШЕНИЯ",
+        heroTitle: "Наши проекты на одной платформе.",
+        heroText: "Современные технологии, инновационный подход и цифровые решения для различных сфер.",
+        heroButton: "Посмотреть платформы",
+        introLabel: "TRENDAPP GROUP",
+        introTitle: "Создаём новые возможности с помощью технологий.",
+        introText: "Разрабатываем программное обеспечение под потребности бизнеса и пользователей, превращая идеи в работающие цифровые продукты.",
+        learnMore: "Подробнее →",
+        directionsLabel: "ЧЕМ МЫ ЗАНИМАЕМСЯ?",
+        directionsTitle: "Технологии для разных сфер.",
+        directionsText: "Современное программное обеспечение и цифровые продукты под различные задачи.",
+        direction1Title: "Разработка ПО",
+        direction1Text: "Создание программного обеспечения для бизнеса и организаций.",
+        direction2Title: "Веб-платформы",
+        direction2Text: "Разработка современных, функциональных и удобных веб-платформ.",
+        direction3Title: "Искусственный интеллект",
+        direction3Text: "Интеграция технологий искусственного интеллекта в цифровые продукты.",
+        direction4Title: "Цифровые системы",
+        direction4Text: "Системы, упрощающие и оптимизирующие рабочие процессы.",
+        whyLabel: "ПОЧЕМУ TRENDAPP?",
+        whyTitle: "От идеи до готового цифрового продукта.",
+        whyText: "Мы стараемся понять потребность, стоящую за каждым проектом. Наша цель — не просто писать код, а создавать удобные технологические продукты, которые решают реальные задачи.",
+        whyButton: "О нашей компании",
+        why1: "Использование современных технологий",
+        why2: "Индивидуальный подход к проекту",
+        why3: "Внимание к пользовательскому опыту",
+        why4: "Постоянное развитие и обновление",
+        previewLabel: "НАША ЭКОСИСТЕМА",
+        previewTitle: "Откройте для себя наши цифровые продукты.",
+        previewText: "Познакомьтесь с платформами, которые мы разрабатываем для разных сфер.",
+        previewButton: "Все платформы →",
+        platformLabel: "НАШИ ПРОДУКТЫ",
+        platformTitle: "Наши цифровые платформы",
+        platformSubtitle: "Технологические решения для различных потребностей и сфер.",
+        activePlatform: "АКТИВНАЯ ПЛАТФОРМА",
+        trendShort: "Платформа оценки компетенций, когнитивных способностей и языковых навыков.",
+        openPlatform: "Перейти на платформу",
+        newPlatform: "Новая платформа",
+        newPlatformText: "Мы работаем над новым цифровым проектом.",
+        comingSoon: "Скоро",
+        yourProject: "Ваш проект?",
+        yourProjectText: "Есть идея или предложение о сотрудничестве? Свяжитесь с нами.",
+        contactUs: "Связаться",
+        trendTitle: "Технологии для оценки человеческого потенциала.",
+        trendDescription: "TrendApp — цифровая платформа для более объективной оценки профессионального соответствия кандидатов и сотрудников. Система объединяет оценку компетенций, тесты когнитивных способностей и проверку языковых навыков. Тестирование с контролем через камеру и отчёты с поддержкой искусственного интеллекта помогают пользователям и компаниям принимать более обоснованные решения.",
+        visitTrend: "Открыть платформу TrendApp",
+        aboutLabel: "О НАС",
+        aboutTitle: "Кто мы?",
+        aboutSubtitle: "Молодая технологическая компания, превращающая идеи в цифровые продукты.",
+        aboutHeading: "Создаём цифровые решения будущего уже сегодня.",
+        aboutText1: "TrendApp — молодая технологическая компания, разрабатывающая программное обеспечение и цифровые продукты для различных сфер. Наша цель — понимать реальные потребности, превращать инновационные идеи в работающие технологические решения и упрощать повседневные задачи пользователей.",
+        aboutText2: "Мы подходим к каждому проекту индивидуально. Разрабатываем современные веб-платформы, системы управления и специализированное программное обеспечение для бизнеса, образования, HR и других направлений.",
+        aboutText3: "Для нас технологии — это не просто код. Это инструмент для решения проблем, оптимизации процессов и создания новых возможностей. Поэтому дизайн, функциональность, безопасность и удобство использования являются важными частями каждого проекта.",
+        value1Title: "Инновации",
+        value1Text: "Развитие с помощью новых идей и современных технологий.",
+        value2Title: "Индивидуальный подход",
+        value2Text: "Решения с учётом потребностей каждого проекта.",
+        value3Title: "Качество",
+        value3Text: "Надёжные, удобные и функциональные продукты.",
+        contactLabel: "КОНТАКТЫ",
+        contactTitle: "Давайте работать вместе.",
+        contactSubtitle: "Есть вопрос, идея проекта или предложение о сотрудничестве? Напишите нам.",
+        generalEmail: "Общие вопросы",
+        supportEmail: "Поддержка Tani / TestEva",
+        businessEmail: "Сотрудничество и проекты",
+        contactNoteTitle: "Есть новая идея?",
+        contactNoteText: "Расскажите нам о своём проекте. Мы будем рады обсудить вашу идею и найти подходящее технологическое решение.",
+        copyright: "Все права защищены."
+    },
 
-    companiesKicker: "OUR ECOSYSTEM",
-    companiesTitle: "Products with<br><em>a purpose.</em>",
-    companiesText: "Different products. One ambition: make digital experiences more useful, accessible and human.",
+    en: {
+        navHome: "Home",
+        navPlatforms: "Platforms",
+        navAbout: "About us",
+        navContact: "Contact",
+        contactButton: "Register",
+        heroLabel: "TRENDAPP GROUP · DIGITAL SOLUTIONS",
+        heroTitle: "Our projects in one platform.",
+        heroText: "Modern technologies, innovative thinking and digital solutions for different industries.",
+        heroButton: "Explore platforms",
+        introLabel: "TRENDAPP GROUP",
+        introTitle: "Creating new opportunities through technology.",
+        introText: "We develop software tailored to business and user needs, turning ideas into functional digital products.",
+        learnMore: "Learn more →",
+        directionsLabel: "WHAT WE DO",
+        directionsTitle: "Technology for different industries.",
+        directionsText: "Modern software and digital products designed for different needs.",
+        direction1Title: "Software development",
+        direction1Text: "Custom software development for businesses and organisations.",
+        direction2Title: "Web platforms",
+        direction2Text: "Building modern, functional and user-friendly web platforms.",
+        direction3Title: "Artificial intelligence",
+        direction3Text: "Integrating artificial intelligence technologies into digital products.",
+        direction4Title: "Digital systems",
+        direction4Text: "Systems that simplify and optimise business processes.",
+        whyLabel: "WHY TRENDAPP?",
+        whyTitle: "From an idea to a complete digital product.",
+        whyText: "We aim to understand the needs behind every project. Our goal is not just to write code, but to create useful technology products that solve real problems.",
+        whyButton: "About our company",
+        why1: "Modern technology",
+        why2: "A tailored approach to every project",
+        why3: "Focus on user experience",
+        why4: "Continuous improvement and development",
+        previewLabel: "OUR ECOSYSTEM",
+        previewTitle: "Discover our digital products.",
+        previewText: "Explore the platforms we develop for different industries.",
+        previewButton: "All platforms →",
+        platformLabel: "OUR PRODUCTS",
+        platformTitle: "Our digital platforms",
+        platformSubtitle: "Technology solutions designed for different needs and industries.",
+        activePlatform: "ACTIVE PLATFORM",
+        trendShort: "A platform for competency, cognitive ability and language assessment.",
+        openPlatform: "Visit platform",
+        newPlatform: "New platform",
+        newPlatformText: "We are working on a new digital project.",
+        comingSoon: "Coming soon",
+        yourProject: "Your project?",
+        yourProjectText: "Have a new idea or partnership proposal? Get in touch with us.",
+        contactUs: "Contact us",
+        trendTitle: "Technology for measuring human potential.",
+        trendDescription: "TrendApp is a digital platform designed to provide a more objective assessment of candidates' and employees' professional suitability. It combines competency assessment, cognitive ability tests and language skills evaluation. Camera-supervised tests and AI-supported reports help individuals and businesses make more informed decisions.",
+        visitTrend: "Visit TrendApp platform",
+        aboutLabel: "ABOUT US",
+        aboutTitle: "Who are we?",
+        aboutSubtitle: "A young technology company turning ideas into digital products.",
+        aboutHeading: "Building tomorrow's digital solutions today.",
+        aboutText1: "TrendApp is a young technology company developing software and digital products for different industries. Our goal is to understand real needs, turn innovative ideas into practical technology solutions and make everyday tasks easier for users.",
+        aboutText2: "We take an individual approach to every project. We work on modern web platforms, management systems and custom software for business, education, human resources and other fields.",
+        aboutText3: "For us, technology is more than code. It is a way to solve problems, optimise processes and create new opportunities. That is why design, functionality, security and usability are important parts of every project.",
+        value1Title: "Innovation",
+        value1Text: "Progress through new ideas and modern technologies.",
+        value2Title: "Individual approach",
+        value2Text: "Solutions tailored to each project's needs.",
+        value3Title: "Quality",
+        value3Text: "Reliable, convenient and functional products.",
+        contactLabel: "CONTACT",
+        contactTitle: "Let's work together.",
+        contactSubtitle: "Have a question, project idea or partnership proposal? Get in touch.",
+        generalEmail: "General enquiries",
+        supportEmail: "Tani / TestEva support",
+        businessEmail: "Partnerships and projects",
+        contactNoteTitle: "Have a new idea?",
+        contactNoteText: "Tell us about your project. We would be happy to discuss your idea and find the right technology solution.",
+        copyright: "All rights reserved."
+    },
 
-    trendappType: "ASSESSMENT PLATFORM",
-    trendappText: "A competency assessment platform combining cognitive, behavioural and language assessments to help people and businesses make more informed decisions.",
-    visitTrendapp: "Visit trendapp.az",
-
-    randevuType: "DIGITAL SERVICE",
-    randevuText: "A digital experience built to make discovering and arranging appointments simpler. Explore the product and its services.",
-    visitRandevu: "Visit randevu.az",
-
-    portfolioNote: "Explore each product through its official website. Product information and availability may vary.",
-
-    visionKicker: "LOOKING AHEAD",
-    visionLabel: "OUR POINT OF VIEW",
-    visionTitle: "The future isn't<br>something we wait for.<br><em>It's something we build.</em>",
-    visionFoot: "Curiosity. Responsibility. Progress.",
-
-    contactKicker: "START A CONVERSATION",
-    contactTitle: "Let's make<br>something <em>matter.</em>",
-    contactText: "Have a question, an idea or want to learn more about our group? We'd be glad to hear from you.",
-    goToProduct: "Go to TrendApp website",
-
-    footerLine: "Building digital products for a more connected world.",
-    backTop: "BACK TO TOP ↑",
-    footerRights: "ALL RIGHTS RESERVED"
-  },
-
-  az: {
-    navAbout: "Haqqımızda",
-    navCompanies: "Şirkətlər",
-    navVision: "Baxışımız",
-    navContact: "Əlaqə",
-    openTrendapp: "TrendApp-ə keç ↗",
-
-    heroEyebrow: "RƏQƏMSAL MƏHSULLAR QRUPU",
-    heroTitle: "Gələcəyi<br>birlikdə <em>qururuq.</em>",
-    heroText: "Faydalı rəqəmsal məhsullar, mənalı xidmətlər və daha yaxşı gündəlik təcrübələr yaradan qrup.",
-
-    aboutKicker: "BİZ KİMİK",
-    aboutTitle: "Texnologiya həyatı <em>yaxşılaşdıranda</em> güclüdür.",
-    aboutText: "Trendapp Group real insanların və real ehtiyacların ətrafında qurulan rəqəmsal məhsul və xidmətləri bir araya gətirir. Aydın düşüncəyə, məqsədyönlü texnologiyaya və uzunmüddətli dəyərə inanırıq.",
-    discover: "Şirkətlərimizi kəşf edin",
-
-    companiesKicker: "EKOSİSTEMİMİZ",
-    companiesTitle: "Məqsədi olan<br><em>məhsullar.</em>",
-    companiesText: "Fərqli məhsullar. Bir məqsəd: rəqəmsal təcrübələri daha faydalı, əlçatan və insan yönümlü etmək.",
-
-    trendappType: "QİYMƏTLƏNDİRMƏ PLATFORMASI",
-    trendappText: "İnsanlara və bizneslərə daha əsaslı qərarlar verməyə kömək edən koqnitiv, davranış və dil qiymətləndirmələrini birləşdirən platforma.",
-    visitTrendapp: "trendapp.az saytına keç",
-
-    randevuType: "RƏQƏMSAL XİDMƏT",
-    randevuText: "Görüş və rezervasiyaların tapılmasını və təşkilini asanlaşdırmaq üçün yaradılmış rəqəmsal təcrübə.",
-    visitRandevu: "randevu.az saytına keç",
-
-    portfolioNote: "Hər bir məhsul haqqında ətraflı məlumat üçün onun rəsmi saytına keçin.",
-
-    visionKicker: "GƏLƏCƏYƏ BAXIŞ",
-    visionLabel: "BİZİM YANAŞMAMIZ",
-    visionTitle: "Gələcəyi gözləmirik.<br><em>Onu özümüz qururuq.</em>",
-    visionFoot: "Maraq. Məsuliyyət. İnkişaf.",
-
-    contactKicker: "ƏLAQƏYƏ KEÇİN",
-    contactTitle: "Gəlin birlikdə<br><em>dəyər yaradaq.</em>",
-    contactText: "Sualınız, ideyanız var və ya qrupumuz haqqında daha çox öyrənmək istəyirsiniz? Bizimlə əlaqə saxlayın.",
-    goToProduct: "TrendApp saytına keç",
-
-    footerLine: "Daha bağlı dünya üçün rəqəmsal məhsullar yaradırıq.",
-    backTop: "YUXARI QAYIT ↑",
-    footerRights: "BÜTÜN HÜQUQLAR QORUNUR"
-  },
-
-  ru: {
-    navAbout: "О нас",
-    navCompanies: "Компании",
-    navVision: "Наше видение",
-    navContact: "Контакты",
-    openTrendapp: "Открыть TrendApp ↗",
-
-    heroEyebrow: "ГРУППА ЦИФРОВЫХ ПРОДУКТОВ",
-    heroTitle: "Создаём<br>то, что будет <em>дальше.</em>",
-    heroText: "Группа, которая развивает полезные цифровые продукты, значимые сервисы и улучшает повседневный пользовательский опыт.",
-
-    aboutKicker: "КТО МЫ",
-    aboutTitle: "Технологии имеют силу, когда делают жизнь <em>лучше.</em>",
-    aboutText: "Trendapp Group объединяет цифровые продукты и сервисы, созданные вокруг реальных людей и их потребностей. Мы ценим ясное мышление, продуманные технологии и долгосрочную пользу.",
-    discover: "Наши компании",
-
-    companiesKicker: "НАША ЭКОСИСТЕМА",
-    companiesTitle: "Продукты<br><em>со смыслом.</em>",
-    companiesText: "Разные продукты. Одна цель — делать цифровой опыт полезнее, доступнее и человечнее.",
-
-    trendappType: "ПЛАТФОРМА ОЦЕНКИ",
-    trendappText: "Платформа оценки компетенций, объединяющая когнитивные, поведенческие и языковые тесты, чтобы помогать людям и компаниям принимать более обоснованные решения.",
-    visitTrendapp: "Перейти на trendapp.az",
-
-    randevuType: "ЦИФРОВОЙ СЕРВИС",
-    randevuText: "Цифровой сервис, призванный упростить поиск и организацию встреч и записей.",
-    visitRandevu: "Перейти на randevu.az",
-
-    portfolioNote: "Подробности о каждом продукте доступны на его официальном сайте.",
-
-    visionKicker: "ВЗГЛЯД ВПЕРЁД",
-    visionLabel: "НАШ ПОДХОД",
-    visionTitle: "Мы не ждём будущего.<br><em>Мы создаём его.</em>",
-    visionFoot: "Любознательность. Ответственность. Развитие.",
-
-    contactKicker: "ДАВАЙТЕ ОБСУДИМ",
-    contactTitle: "Создадим<br>что-то <em>значимое.</em>",
-    contactText: "Есть вопрос, идея или хотите узнать больше о нашей группе? Будем рады вашему сообщению.",
-    goToProduct: "Перейти на сайт TrendApp",
-
-    footerLine: "Создаём цифровые продукты для более связанного мира.",
-    backTop: "НАВЕРХ ↑",
-    footerRights: "ВСЕ ПРАВА ЗАЩИЩЕНЫ"
-  },
-
-  tr: {
-    navAbout: "Hakkımızda",
-    navCompanies: "Şirketler",
-    navVision: "Vizyonumuz",
-    navContact: "İletişim",
-    openTrendapp: "TrendApp'i aç ↗",
-
-    heroEyebrow: "DİJİTAL ÜRÜN GRUBU",
-    heroTitle: "Geleceği<br>birlikte <em>şekillendiriyoruz.</em>",
-    heroText: "Yararlı dijital ürünler, anlamlı hizmetler ve daha iyi günlük deneyimler geliştirmeye odaklanan bir grup.",
-
-    aboutKicker: "BİZ KİMİZ",
-    aboutTitle: "Teknoloji hayatı <em>iyileştirdiğinde</em> güçlüdür.",
-    aboutText: "Trendapp Group, gerçek insanlar ve gerçek ihtiyaçlar etrafında tasarlanan dijital ürün ve hizmetleri bir araya getirir. Açık düşünceye, özenli teknolojiye ve uzun vadeli değere inanıyoruz.",
-    discover: "Şirketlerimizi keşfedin",
-
-    companiesKicker: "EKOSİSTEMİMİZ",
-    companiesTitle: "Bir amacı olan<br><em>ürünler.</em>",
-    companiesText: "Farklı ürünler. Tek hedef: dijital deneyimleri daha yararlı, erişilebilir ve insani kılmak.",
-
-    trendappType: "DEĞERLENDİRME PLATFORMU",
-    trendappText: "İnsanların ve işletmelerin daha bilinçli kararlar almasına yardımcı olmak için bilişsel, davranışsal ve dil değerlendirmelerini birleştiren platform.",
-    visitTrendapp: "trendapp.az sitesini ziyaret et",
-
-    randevuType: "DİJİTAL HİZMET",
-    randevuText: "Randevu bulmayı ve düzenlemeyi kolaylaştırmak için tasarlanmış dijital deneyim.",
-    visitRandevu: "randevu.az sitesini ziyaret et",
-
-    portfolioNote: "Her ürün hakkında ayrıntılı bilgi için resmi web sitesini ziyaret edin.",
-
-    visionKicker: "GELECEĞE BAKIŞ",
-    visionLabel: "BAKIŞ AÇIMIZ",
-    visionTitle: "Geleceği beklemiyoruz.<br><em>Onu biz inşa ediyoruz.</em>",
-    visionFoot: "Merak. Sorumluluk. İlerleme.",
-
-    contactKicker: "İLETİŞİME GEÇİN",
-    contactTitle: "Birlikte<br><em>değer yaratalım.</em>",
-    contactText: "Bir sorunuz, fikriniz mi var veya grubumuz hakkında daha fazla bilgi mi istiyorsunuz? Bize yazın.",
-    goToProduct: "TrendApp web sitesine git",
-
-    footerLine: "Daha bağlantılı bir dünya için dijital ürünler geliştiriyoruz.",
-    backTop: "BAŞA DÖN ↑",
-    footerRights: "TÜM HAKLARI SAKLIDIR"
-  }
+    tr: {
+        navHome: "Ana sayfa",
+        navPlatforms: "Platformlar",
+        navAbout: "Hakkımızda",
+        navContact: "İletişim",
+        contactButton: "Kayıt Ol",
+        heroLabel: "TRENDAPP GROUP · DİJİTAL ÇÖZÜMLER",
+        heroTitle: "Projelerimiz tek platformda.",
+        heroText: "Modern teknolojiler, yenilikçi yaklaşım ve farklı sektörler için dijital çözümler.",
+        heroButton: "Platformları keşfet",
+        introLabel: "TRENDAPP GROUP",
+        introTitle: "Teknolojiyle yeni fırsatlar yaratıyoruz.",
+        introText: "İşletmelerin ve kullanıcıların ihtiyaçlarına uygun yazılımlar geliştiriyor, fikirleri çalışan dijital ürünlere dönüştürüyoruz.",
+        learnMore: "Daha fazla bilgi →",
+        directionsLabel: "NE YAPIYORUZ?",
+        directionsTitle: "Farklı sektörler için teknoloji.",
+        directionsText: "Farklı ihtiyaçlara yönelik modern yazılımlar ve dijital ürünler.",
+        direction1Title: "Yazılım geliştirme",
+        direction1Text: "İşletmeler ve kuruluşlar için özel yazılım geliştirme.",
+        direction2Title: "Web platformları",
+        direction2Text: "Modern, işlevsel ve kullanıcı dostu web platformları oluşturma.",
+        direction3Title: "Yapay zekâ",
+        direction3Text: "Yapay zekâ teknolojilerini dijital ürünlere entegre etme.",
+        direction4Title: "Dijital sistemler",
+        direction4Text: "İş süreçlerini kolaylaştıran ve optimize eden sistemler.",
+        whyLabel: "NEDEN TRENDAPP?",
+        whyTitle: "Fikirden hazır dijital ürüne.",
+        whyText: "Her projenin arkasındaki ihtiyacı anlamaya çalışıyoruz. Amacımız yalnızca kod yazmak değil, gerçek sorunları çözen kullanışlı teknoloji ürünleri oluşturmaktır.",
+        whyButton: "Şirketimiz hakkında",
+        why1: "Modern teknolojilerin kullanımı",
+        why2: "Projeye özel yaklaşım",
+        why3: "Kullanıcı deneyimine odaklanma",
+        why4: "Sürekli gelişim ve yenilik",
+        previewLabel: "EKOSİSTEMİMİZ",
+        previewTitle: "Dijital ürünlerimizi keşfedin.",
+        previewText: "Farklı sektörler için geliştirdiğimiz platformları inceleyin.",
+        previewButton: "Tüm platformlar →",
+        platformLabel: "ÜRÜNLERİMİZ",
+        platformTitle: "Dijital platformlarımız",
+        platformSubtitle: "Farklı ihtiyaçlar ve sektörler için geliştirilmiş teknoloji çözümleri.",
+        activePlatform: "AKTİF PLATFORM",
+        trendShort: "Yetkinlik, bilişsel beceri ve dil değerlendirme platformu.",
+        openPlatform: "Platforma git",
+        newPlatform: "Yeni platform",
+        newPlatformText: "Yeni dijital projemiz üzerinde çalışıyoruz.",
+        comingSoon: "Yakında",
+        yourProject: "Sizin projeniz?",
+        yourProjectText: "Yeni bir fikriniz veya iş birliği teklifiniz mi var? Bizimle iletişime geçin.",
+        contactUs: "İletişime geç",
+        trendTitle: "İnsan potansiyelini ölçmek için teknoloji.",
+        trendDescription: "TrendApp, adayların ve çalışanların mesleki uygunluğunu daha objektif değerlendirmek için geliştirilmiş dijital bir platformdur. Sistem; yetkinlik değerlendirmesini, bilişsel beceri testlerini ve dil becerilerinin ölçülmesini bir araya getirir. Kamera denetimli testler ve yapay zekâ destekli raporlar bireylerin ve şirketlerin daha bilinçli kararlar almasına yardımcı olur.",
+        visitTrend: "TrendApp platformunu ziyaret et",
+        aboutLabel: "HAKKIMIZDA",
+        aboutTitle: "Biz kimiz?",
+        aboutSubtitle: "Fikirleri dijital ürünlere dönüştüren genç bir teknoloji şirketi.",
+        aboutHeading: "Geleceğin dijital çözümlerini bugünden geliştiriyoruz.",
+        aboutText1: "TrendApp, farklı sektörler için yazılım ve dijital ürünler geliştiren genç bir teknoloji şirketidir. Amacımız gerçek ihtiyaçları anlamak, yenilikçi fikirleri çalışan teknoloji çözümlerine dönüştürmek ve kullanıcıların günlük işlerini kolaylaştırmaktır.",
+        aboutText2: "Her projeye özel bir yaklaşım benimsiyoruz. İş dünyası, eğitim, insan kaynakları ve diğer alanlar için modern web platformları, yönetim sistemleri ve özel yazılımlar geliştiriyoruz.",
+        aboutText3: "Bizim için teknoloji yalnızca koddan ibaret değildir. Sorunları çözmenin, süreçleri iyileştirmenin ve yeni fırsatlar yaratmanın bir yoludur. Bu nedenle tasarım, işlevsellik, güvenlik ve kullanım kolaylığını her projenin önemli bir parçası olarak görüyoruz.",
+        value1Title: "Yenilik",
+        value1Text: "Yeni fikirler ve modern teknolojilerle gelişim.",
+        value2Title: "Özel yaklaşım",
+        value2Text: "Her projenin ihtiyaçlarına uygun çözümler.",
+        value3Title: "Kalite",
+        value3Text: "Güvenilir, kullanışlı ve işlevsel ürünler.",
+        contactLabel: "İLETİŞİM",
+        contactTitle: "Birlikte çalışalım.",
+        contactSubtitle: "Sorunuz, proje fikriniz veya iş birliği teklifiniz mi var? Bize ulaşın.",
+        generalEmail: "Genel sorular",
+        supportEmail: "Tani / TestEva desteği",
+        businessEmail: "İş birlikleri ve projeler",
+        contactNoteTitle: "Yeni bir fikriniz mi var?",
+        contactNoteText: "Projenizi bize anlatın. Fikrinizi görüşmekten ve uygun teknoloji çözümünü bulmaktan memnuniyet duyarız.",
+        copyright: "Tüm hakları saklıdır."
+    }
 };
 
 
-function setLanguage(lang) {
-  const dict = translations[lang] || translations.en;
+// ===================================
+// LANGUAGE SWITCHER
+// ===================================
 
-  document.documentElement.lang = lang;
+function setLanguage(language) {
+    const dictionary = translations[language];
 
-  document.querySelectorAll("[data-i18n]").forEach(el => {
-    const key = el.dataset.i18n;
-
-    if (dict[key]) {
-      el.innerHTML = dict[key];
+    if (!dictionary) {
+        return;
     }
-  });
 
-  document.querySelectorAll(".lang-btn").forEach(btn => {
-    btn.classList.toggle("active", btn.dataset.lang === lang);
+    document.documentElement.lang = language;
 
-    btn.setAttribute(
-      "aria-pressed",
-      btn.dataset.lang === lang ? "true" : "false"
-    );
-  });
+    document.querySelectorAll("[data-i18n]").forEach(function(element) {
+        const key = element.dataset.i18n;
 
-  try {
-    localStorage.setItem("trendapp-group-language", lang);
-  } catch (e) {}
+        if (dictionary[key]) {
+            // innerHTML preserves <br> and <em> formatting in translations
+            element.innerHTML = dictionary[key];
+        }
+    });
+
+    document.querySelectorAll(".languages button").forEach(function(button) {
+        button.classList.toggle(
+            "active",
+            button.dataset.lang === language
+        );
+
+        button.setAttribute(
+            "aria-pressed",
+            button.dataset.lang === language ? "true" : "false"
+        );
+    });
+
+    try {
+        localStorage.setItem("trendapp-language", language);
+    } catch (error) {
+        // The site still works if localStorage is unavailable
+    }
 }
 
 
-document.addEventListener("DOMContentLoaded", () => {
+// ===================================
+// PAGE NAVIGATION
+// ===================================
 
-  // Language buttons
-  document.querySelectorAll(".lang-btn").forEach(btn => {
-    btn.addEventListener("click", () => {
-      setLanguage(btn.dataset.lang);
+function showPage(pageName) {
+    const pages = document.querySelectorAll(".page");
+    const nav = document.getElementById("nav");
+    const menuButton = document.getElementById("menu-toggle");
+
+    let selectedPage = document.getElementById(pageName);
+
+    // If the requested page does not exist, open Home
+    if (!selectedPage || !selectedPage.classList.contains("page")) {
+        pageName = "home";
+        selectedPage = document.getElementById("home");
+    }
+
+    if (!selectedPage) {
+        return;
+    }
+
+    // Hide all pages
+    pages.forEach(function(page) {
+        page.classList.remove("active-page");
     });
-  });
 
-  // Saved language
-  let saved = "en";
+    // Show selected page
+    selectedPage.classList.add("active-page");
 
-  try {
-    saved = localStorage.getItem("trendapp-group-language") || "en";
-  } catch (e) {}
-
-  setLanguage(saved);
-
-  // Mobile menu
-  const toggle = document.querySelector(".menu-toggle");
-  const nav = document.querySelector(".main-nav");
-
-  toggle.addEventListener("click", () => {
-    const opened = nav.classList.toggle("open");
-
-    toggle.setAttribute(
-      "aria-expanded",
-      opened ? "true" : "false"
-    );
-
-    toggle.textContent = opened ? "×" : "☰";
-  });
-
-  nav.querySelectorAll("a").forEach(link => {
-    link.addEventListener("click", () => {
-      nav.classList.remove("open");
-      toggle.setAttribute("aria-expanded", "false");
-      toggle.textContent = "☰";
+    // Update active navigation link
+    document.querySelectorAll(".nav a").forEach(function(link) {
+        link.classList.toggle(
+            "active-link",
+            link.getAttribute("href") === "#" + pageName
+        );
     });
-  });
 
-  // Current year
-  document.getElementById("year").textContent =
-    new Date().getFullYear();
+    // Close mobile menu
+    if (nav) {
+        nav.classList.remove("open");
+    }
+
+    if (menuButton) {
+        menuButton.setAttribute("aria-expanded", "false");
+        menuButton.textContent = "☰";
+    }
+
+    // Scroll to top
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+}
+
+
+// Handle every internal link to a page
+document.addEventListener("click", function(event) {
+    const link = event.target.closest('a[href^="#"]');
+
+    if (!link) {
+        return;
+    }
+
+    const hash = link.getAttribute("href");
+    const pageName = hash.substring(1);
+    const target = document.getElementById(pageName);
+
+    // Do not interfere with links to sections or other elements
+    if (!target || !target.classList.contains("page")) {
+        return;
+    }
+
+    event.preventDefault();
+
+    if (window.location.hash !== hash) {
+        history.pushState(null, "", hash);
+    }
+
+    showPage(pageName);
+});
+
+
+// Browser back and forward buttons
+window.addEventListener("popstate", function() {
+    showPage(window.location.hash.substring(1) || "home");
+});
+
+
+// Direct hash changes
+window.addEventListener("hashchange", function() {
+    showPage(window.location.hash.substring(1) || "home");
+});
+
+
+// ===================================
+// THEME SWITCHER
+// ===================================
+
+function updateThemeButton() {
+    const themeButton = document.getElementById("theme-toggle");
+
+    if (!themeButton) {
+        return;
+    }
+
+    if (document.body.classList.contains("dark-theme")) {
+        themeButton.textContent = "☀";
+        themeButton.setAttribute("aria-label", "Switch to light theme");
+    } else {
+        themeButton.textContent = "☾";
+        themeButton.setAttribute("aria-label", "Switch to dark theme");
+    }
+}
+
+function initTheme() {
+    const themeButton = document.getElementById("theme-toggle");
+
+    if (!themeButton) {
+        return;
+    }
+
+    let savedTheme = "light";
+
+    try {
+        savedTheme = localStorage.getItem("trendapp-theme") || "light";
+    } catch (error) {}
+
+    if (savedTheme === "dark") {
+        document.body.classList.add("dark-theme");
+    }
+
+    updateThemeButton();
+
+    themeButton.addEventListener("click", function() {
+        document.body.classList.toggle("dark-theme");
+
+        const isDark = document.body.classList.contains("dark-theme");
+
+        try {
+            localStorage.setItem(
+                "trendapp-theme",
+                isDark ? "dark" : "light"
+            );
+        } catch (error) {}
+
+        updateThemeButton();
+    });
+}
+
+
+// ===================================
+// MOBILE MENU
+// ===================================
+
+function initMobileMenu() {
+    const menuButton = document.getElementById("menu-toggle");
+    const nav = document.getElementById("nav");
+
+    if (!menuButton || !nav) {
+        return;
+    }
+
+    menuButton.addEventListener("click", function() {
+        const isOpen = nav.classList.toggle("open");
+
+        menuButton.setAttribute(
+            "aria-expanded",
+            isOpen ? "true" : "false"
+        );
+
+        menuButton.textContent = isOpen ? "×" : "☰";
+    });
+
+    // Close menu after clicking a navigation link
+    nav.querySelectorAll("a").forEach(function(link) {
+        link.addEventListener("click", function() {
+            nav.classList.remove("open");
+            menuButton.setAttribute("aria-expanded", "false");
+            menuButton.textContent = "☰";
+        });
+    });
+}
+
+
+// ===================================
+// FOOTER YEAR
+// ===================================
+
+function initFooterYear() {
+    const yearElement = document.getElementById("year");
+
+    if (yearElement) {
+        yearElement.textContent = new Date().getFullYear();
+    }
+}
+
+
+// ===================================
+// REGISTRATION MODAL
+// ===================================
+
+function initRegisterModal() {
+    const registerModal = document.getElementById("register-modal");
+    const registerOpen = document.getElementById("register-open");
+    const registerClose = document.getElementById("register-close");
+
+    if (!registerModal) {
+        return;
+    }
+
+    if (registerOpen) {
+        registerOpen.addEventListener("click", function(event) {
+            event.preventDefault();
+            registerModal.classList.add("open");
+        });
+    }
+
+    if (registerClose) {
+        registerClose.addEventListener("click", function() {
+            registerModal.classList.remove("open");
+        });
+    }
+
+    // Close when clicking outside the modal content
+    registerModal.addEventListener("click", function(event) {
+        if (event.target === registerModal) {
+            registerModal.classList.remove("open");
+        }
+    });
+
+    // Close with Escape key
+    document.addEventListener("keydown", function(event) {
+        if (event.key === "Escape") {
+            registerModal.classList.remove("open");
+        }
+    });
+}
+
+
+// ===================================
+// START THE WEBSITE
+// ===================================
+
+document.addEventListener("DOMContentLoaded", function() {
+
+    // Language
+    document.querySelectorAll(".languages button").forEach(function(button) {
+        button.addEventListener("click", function() {
+            setLanguage(button.dataset.lang);
+        });
+    });
+
+    let savedLanguage = "az";
+
+    try {
+        savedLanguage = localStorage.getItem("trendapp-language") || "az";
+    } catch (error) {}
+
+    setLanguage(savedLanguage);
+
+    // Navigation
+    showPage(window.location.hash.substring(1) || "home");
+
+    // Other features
+    initTheme();
+    initMobileMenu();
+    initFooterYear();
+    initRegisterModal();
 
 });

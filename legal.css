@@ -1,0 +1,175 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --accent: #f15a24;
+  --text: #151b2d;
+  --muted: #687080;
+  --line: #e9ebef;
+  --page: #ffffff;
+  --soft: #f7f8fa;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--page);
+  color: var(--text);
+  line-height: 1.7;
+}
+
+.topbar {
+  min-height: 76px;
+  padding: 16px max(5%, calc((100% - 1080px) / 2));
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  border-bottom: 1px solid var(--line);
+}
+
+.logo {
+  color: var(--text);
+  text-decoration: none;
+  font-size: 19px;
+  font-weight: 800;
+  letter-spacing: -.5px;
+}
+
+.logo span {
+  color: var(--accent);
+}
+
+.languages {
+  display: flex;
+  gap: 5px;
+}
+
+.languages button {
+  border: 0;
+  background: transparent;
+  color: var(--muted);
+  padding: 8px 9px;
+  border-radius: 7px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.languages button:hover,
+.languages button.active {
+  color: var(--accent);
+  background: #fff1eb;
+}
+
+.container {
+  width: min(90%, 780px);
+  margin: 48px auto 80px;
+}
+
+.back {
+  display: inline-block;
+  margin-bottom: 38px;
+  color: var(--accent);
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.back:hover,
+.email:hover {
+  text-decoration: underline;
+}
+
+.eyebrow {
+  color: var(--accent);
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+h1 {
+  font-size: clamp(32px, 6vw, 46px);
+  line-height: 1.15;
+  letter-spacing: -1.2px;
+  margin-bottom: 10px;
+}
+
+.updated {
+  color: var(--muted);
+  font-size: 13px;
+  margin-bottom: 38px;
+}
+
+section {
+  padding: 23px 0;
+  border-top: 1px solid var(--line);
+}
+
+h2 {
+  font-size: 18px;
+  margin-bottom: 7px;
+}
+
+section p {
+  color: #515968;
+  font-size: 15px;
+}
+
+.email {
+  display: inline-block;
+  margin-top: 10px;
+  color: var(--accent);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.footer {
+  border-top: 1px solid var(--line);
+  padding: 22px 5%;
+  text-align: center;
+  color: var(--muted);
+  font-size: 12px;
+}
+
+@media (max-width: 600px) {
+  .topbar {
+    min-height: 68px;
+    padding: 14px 5%;
+  }
+
+  .logo {
+    font-size: 16px;
+  }
+
+  .languages {
+    gap: 0;
+  }
+
+  .languages button {
+    padding: 7px 6px;
+    font-size: 12px;
+  }
+
+  .container {
+    margin-top: 32px;
+  }
+
+  .back {
+    margin-bottom: 28px;
+  }
+
+  section {
+    padding: 19px 0;
+  }
+
+  h2 {
+    font-size: 17px;
+  }
+
+  section p {
+    font-size: 14px;
+  }
+}

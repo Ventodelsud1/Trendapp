@@ -1,272 +1,429 @@
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="az">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#102d2b">
-  <title>Trendapp Group — Digital products, connected future</title>
-  <meta name="description" content="Trendapp Group builds digital products and connected experiences.">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <title>TrendApp — Rəqəmsal həllər</title>
+    <meta name="description" content="TrendApp — innovativ startap və İT layihəsi. Müasir, rahat və etibarlı rəqəmsal həllər.">
 
-  <link rel="stylesheet" href="./style.css">
-  <script src="./script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <header class="site-header" id="top">
-    <a class="brand" href="#top">
-      <span class="brand-mark">T<span>.</span></span>
-      <span class="brand-name">TRENDAPP <b>GROUP</b></span>
+
+<header class="header">
+    <a href="#home" class="logo" aria-label="TrendApp home">
+        <span class="logo-trend">TREND</span><span class="logo-app">app</span>
     </a>
 
-    <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
-
-    <nav class="main-nav">
-      <a href="#about" data-i18n="navAbout">About</a>
-      <a href="#companies" data-i18n="navCompanies">Companies</a>
-      <a href="#vision" data-i18n="navVision">Our vision</a>
-      <a href="#contact" data-i18n="navContact">Contact</a>
+    <nav class="nav" id="nav">
+        <a href="#home" data-i18n="navHome">Ana səhifə</a>
+        <a href="#platforms" data-i18n="navPlatforms">Platformalar</a>
+        <a href="#about" data-i18n="navAbout">Haqqımızda</a>
+        <a href="#contact" data-i18n="navContact">Əlaqə</a>
     </nav>
 
-    <div class="header-actions">
-      <div class="language-switcher">
-        <button class="lang-btn active" data-lang="en">EN</button>
-        <button class="lang-btn" data-lang="az">AZ</button>
-        <button class="lang-btn" data-lang="ru">RU</button>
-        <button class="lang-btn" data-lang="tr">TR</button>
-      </div>
-
-      <a class="header-link" href="https://www.trendapp.az/" target="_blank" rel="noopener" data-i18n="openTrendapp">
-        Open TrendApp ↗
-      </a>
-    </div>
-  </header>
-
-  <main>
-    <section class="hero">
-      <div class="hero-image"></div>
-      <div class="hero-shade"></div>
-
-      <div class="hero-content">
-        <p class="eyebrow light">
-          <span></span>
-          <span data-i18n="heroEyebrow">A DIGITAL PRODUCT GROUP</span>
-        </p>
-
-        <h1 data-i18n="heroTitle">
-          We shape<br>what comes <em>next.</em>
-        </h1>
-
-        <div class="hero-bottom">
-          <p data-i18n="heroText">
-            A group focused on building useful digital products, meaningful services and better everyday experiences.
-          </p>
-
-          <a class="round-link" href="#companies">↓</a>
-        </div>
-      </div>
-
-      <div class="hero-index">01 / 04</div>
-      <div class="hero-stamp">IDEAS INTO<br>EXPERIENCE</div>
-    </section>
-
-    <section class="intro section-pad" id="about">
-      <div class="section-kicker">
-        <span>01</span>
-        <span data-i18n="aboutKicker">WHO WE ARE</span>
-      </div>
-
-      <div class="intro-grid">
-        <h2 data-i18n="aboutTitle">
-          Technology is only powerful when it makes life <em>better.</em>
-        </h2>
-
-        <div class="intro-copy">
-          <p data-i18n="aboutText">
-            Trendapp Group brings together digital products and services designed around real people and real needs.
-            We believe in clear thinking, thoughtful technology and long-term value.
-          </p>
-
-          <a class="text-link" href="#companies">
-            <span data-i18n="discover">Discover our companies</span>
-            <b>↗</b>
-          </a>
-        </div>
-      </div>
-
-      <div class="intro-rule">
-        <span>THINK CLEAR. BUILD USEFUL.</span>
-        <span>BAKU · AZERBAIJAN</span>
-      </div>
-    </section>
-
-    <section class="companies section-pad" id="companies">
-      <div class="section-kicker">
-        <span>02</span>
-        <span data-i18n="companiesKicker">OUR ECOSYSTEM</span>
-      </div>
-
-      <div class="section-heading">
-        <h2 data-i18n="companiesTitle">
-          Products with<br><em>a purpose.</em>
-        </h2>
-
-        <p data-i18n="companiesText">
-          Different products. One ambition: make digital experiences more useful, accessible and human.
-        </p>
-      </div>
-
-      <article class="company-card trendapp-card">
-        <div class="company-visual trendapp-visual">
-          <div class="visual-orbit orbit-one"></div>
-          <div class="visual-orbit orbit-two"></div>
-
-          <div class="visual-core">
-            <span>t.</span>
-            <small>ASSESSMENT<br>INTELLIGENCE</small>
-          </div>
-
-          <div class="visual-tag">01 — PEOPLE & POTENTIAL</div>
+    <div class="header-right">
+        <div class="languages">
+            <button data-lang="az" class="active">AZ</button>
+            <button data-lang="ru">RU</button>
+            <button data-lang="en">EN</button>
+            <button data-lang="tr">TR</button>
         </div>
 
-        <div class="company-info">
-          <p class="company-type" data-i18n="trendappType">ASSESSMENT PLATFORM</p>
+        <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch to dark theme">☾</button>
 
-          <h3>TrendApp<span>®</span></h3>
-
-          <p data-i18n="trendappText">
-            A competency assessment platform combining cognitive, behavioural and language assessments to help people and businesses make more informed decisions.
-          </p>
-
-          <a class="pill-link" href="https://www.trendapp.az/" target="_blank" rel="noopener">
-            <span data-i18n="visitTrendapp">Visit trendapp.az</span>
-            <b>↗</b>
-          </a>
-
-          <span class="company-number">01</span>
-        </div>
-      </article>
-
-      <article class="company-card randevu-card">
-        <div class="company-visual randevu-visual">
-          <div class="randevu-window">
-            <div class="window-top">
-              <i></i><i></i><i></i>
-              <span>YOUR TIME, IN SYNC</span>
-            </div>
-
-            <div class="calendar-grid">
-              <b>MON</b><b>TUE</b><b>WED</b><b>THU</b><b>FRI</b>
-              <span>09</span><span>10</span>
-              <span class="selected">11</span>
-              <span>12</span><span>13</span>
-            </div>
-
-            <div class="calendar-line"></div>
-          </div>
-
-          <div class="visual-tag">02 — TIME & CONNECTION</div>
-        </div>
-
-        <div class="company-info">
-          <p class="company-type" data-i18n="randevuType">DIGITAL SERVICE</p>
-
-          <h3>Randevu<span>.</span>az</h3>
-
-          <p data-i18n="randevuText">
-            A digital experience built to make discovering and arranging appointments simpler.
-            Explore the product and its services.
-          </p>
-
-          <a class="pill-link" href="https://randevu.az/" target="_blank" rel="noopener">
-            <span data-i18n="visitRandevu">Visit randevu.az</span>
-            <b>↗</b>
-          </a>
-
-          <span class="company-number">02</span>
-        </div>
-      </article>
-
-      <p class="portfolio-note" data-i18n="portfolioNote">
-        Explore each product through its official website. Product information and availability may vary.
-      </p>
-    </section>
-
-    <section class="vision" id="vision">
-      <div class="vision-bg"></div>
-
-      <div class="vision-content section-pad">
-        <div class="section-kicker light">
-          <span>03</span>
-          <span data-i18n="visionKicker">LOOKING AHEAD</span>
-        </div>
-
-        <p class="vision-label" data-i18n="visionLabel">OUR POINT OF VIEW</p>
-
-        <h2 data-i18n="visionTitle">
-          The future isn't<br>something we wait for.<br><em>It's something we build.</em>
-        </h2>
-
-        <div class="vision-foot">
-          <span data-i18n="visionFoot">Curiosity. Responsibility. Progress.</span>
-          <span>— TRENDAPP GROUP</span>
-        </div>
-      </div>
-    </section>
-
-    <section class="contact section-pad" id="contact">
-      <div class="section-kicker">
-        <span>04</span>
-        <span data-i18n="contactKicker">START A CONVERSATION</span>
-      </div>
-
-      <div class="contact-grid">
-        <h2 data-i18n="contactTitle">
-          Let's make<br>something <em>matter.</em>
-        </h2>
-
-        <div class="contact-side">
-          <p data-i18n="contactText">
-            Have a question, an idea or want to learn more about our group?
-            We'd be glad to hear from you.
-          </p>
-
-          <a class="contact-email" href="mailto:info@trendapp.az">
-            info@trendapp.az ↗
-          </a>
-
-          <a class="text-link" href="https://www.trendapp.az/" target="_blank" rel="noopener">
-            <span data-i18n="goToProduct">Go to TrendApp website</span>
-            <b>↗</b>
-          </a>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <div class="footer-top">
-      <a class="brand footer-brand" href="#top">
-        <span class="brand-mark">T<span>.</span></span>
-        <span class="brand-name">TRENDAPP <b>GROUP</b></span>
-      </a>
-
-      <p data-i18n="footerLine">
-        Building digital products for a more connected world.
-      </p>
-
-      <a class="back-top" href="#top" data-i18n="backTop">BACK TO TOP ↑</a>
+        <a href="https://www.trendapp.az/signup" class="contact-button" data-i18n="contactButton">
+            Qeydiyyat
+        </a>
     </div>
 
+    <button class="menu-toggle" id="menu-toggle" type="button" aria-label="Open navigation">☰</button>
+</header>
+
+<main>
+
+    <!-- HOME PAGE -->
+    <section class="page active-page" id="home">
+
+        <section class="hero">
+            <div class="hero-content">
+                <p class="eyebrow" data-i18n="heroLabel">TRENDAPP GROUP · RƏQƏMSAL HƏLLƏR</p>
+
+                <h1 data-i18n="heroTitle">
+                    İnnovativ ideyalar. Rəqəmsal həllər.
+                </h1>
+
+                <p class="hero-description" data-i18n="heroText">
+                    TrendApp istifadəçilərə müasir, rahat və etibarlı rəqəmsal həllər təqdim edən innovativ startap və İT layihəsidir.
+                </p>
+
+                <a href="#platforms" class="primary-button" data-i18n="heroButton">
+                    Platformalara bax
+                </a>
+            </div>
+
+            <div class="hero-visual">
+                <div class="orange-orbit orbit-one"></div>
+                <div class="orange-orbit orbit-two"></div>
+
+                <div class="connection connection-one"></div>
+                <div class="connection connection-two"></div>
+                <div class="connection connection-three"></div>
+                <div class="connection connection-four"></div>
+
+                <div class="floating-icon icon-chart">▥</div>
+                <div class="floating-icon icon-cap">◆</div>
+                <div class="floating-icon icon-users">●●<br>●●</div>
+                <div class="floating-icon icon-check">✓</div>
+
+                <div class="main-logo-card">
+                    <span class="logo-trend">TREND</span><span class="logo-app">app</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="home-intro">
+            <p class="eyebrow" data-i18n="introLabel">TRENDAPP GROUP</p>
+
+            <h2 data-i18n="introTitle">
+                Texnologiya ilə yeni imkanlar yaradırıq.
+            </h2>
+
+            <p data-i18n="introText">
+                Məqsədimiz istifadəçilərin ehtiyaclarına cavab verən rəqəmsal məhsul və xidmətlər yaratmaq, texnologiya sahəsində innovasiyaların inkişafına töhfə verməkdir.
+            </p>
+
+            <a href="#about" class="card-link" data-i18n="learnMore">Daha ətraflı →</a>
+        </section>
+
+        <!-- COMPANY DIRECTIONS -->
+        <section class="directions">
+            <div class="section-heading">
+                <p class="eyebrow" data-i18n="directionsLabel">NƏ İŞLƏYİRİK?</p>
+
+                <h2 data-i18n="directionsTitle">
+                    Rəqəmsal gələcək üçün innovativ yanaşma.
+                </h2>
+
+                <p data-i18n="directionsText">
+                    Müasir texnologiyalar əsasında rahat, etibarlı və faydalı rəqəmsal məhsul və xidmətlərin inkişafı.
+                </p>
+            </div>
+
+            <div class="directions-grid">
+                <article class="direction-card">
+                    <span>01</span>
+                    <div class="direction-icon">⌘</div>
+
+                    <h3 data-i18n="direction1Title">Rəqəmsal məhsullar</h3>
+
+                    <p data-i18n="direction1Text">
+                        İstifadəçilərin ehtiyaclarına cavab verən müasir rəqəmsal məhsulların inkişafı.
+                    </p>
+                </article>
+
+                <article class="direction-card">
+                    <span>02</span>
+                    <div class="direction-icon">▦</div>
+
+                    <h3 data-i18n="direction2Title">Proqram təminatı</h3>
+
+                    <p data-i18n="direction2Text">
+                        Rahat və etibarlı istifadə təcrübəsi təqdim edən proqram həlləri.
+                    </p>
+                </article>
+
+                <article class="direction-card">
+                    <span>03</span>
+                    <div class="direction-icon">✧</div>
+
+                    <h3 data-i18n="direction3Title">İnnovativ texnologiyalar</h3>
+
+                    <p data-i18n="direction3Text">
+                        Texnologiya sahəsində yeni yanaşmaların və innovativ həllərin təşviqi.
+                    </p>
+                </article>
+
+                <article class="direction-card">
+                    <span>04</span>
+                    <div class="direction-icon">◎</div>
+
+                    <h3 data-i18n="direction4Title">Rəqəmsal xidmətlər</h3>
+
+                    <p data-i18n="direction4Text">
+                        İstifadəçilərin gündəlik ehtiyaclarını asanlaşdıran rəqəmsal xidmətlər.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <!-- WHY TRENDAPP -->
+        <section class="why-section">
+            <div class="why-content">
+                <p class="eyebrow" data-i18n="whyLabel">NİYƏ TRENDAPP?</p>
+
+                <h2 data-i18n="whyTitle">
+                    İnnovasiyanı real həllərə çeviririk.
+                </h2>
+
+                <p data-i18n="whyText">
+                    TrendApp-in əsas məqsədi texnologiyanın imkanlarından istifadə edərək istifadəçilərə fayda verən həllər yaratmaqdır. Müasir yanaşma, rahat istifadə təcrübəsi və etibarlılıq layihələrimizin əsas prinsipləridir.
+                </p>
+
+                <a href="#about" class="primary-button" data-i18n="whyButton">
+                    Şirkətimiz haqqında
+                </a>
+            </div>
+
+            <div class="why-points">
+                <div><span>✓</span><p data-i18n="why1">Müasir texnologiyalardan istifadə</p></div>
+                <div><span>✓</span><p data-i18n="why2">Layihəyə uyğun fərdi yanaşma</p></div>
+                <div><span>✓</span><p data-i18n="why3">İstifadəçi təcrübəsinə diqqət</p></div>
+                <div><span>✓</span><p data-i18n="why4">Davamlı inkişaf və yenilənmə</p></div>
+            </div>
+        </section>
+
+        <!-- HOME PLATFORM PREVIEW -->
+        <section class="home-platforms">
+            <div>
+                <p class="eyebrow" data-i18n="previewLabel">EKOSİSTEMİMİZ</p>
+
+                <h2 data-i18n="previewTitle">
+                    Rəqəmsal məhsullarımızı kəşf edin.
+                </h2>
+
+                <p data-i18n="previewText">
+                    Müxtəlif sahələr üçün hazırladığımız platformalarla tanış olun.
+                </p>
+            </div>
+
+            <a href="#platforms" class="primary-button" data-i18n="previewButton">
+                Bütün platformalar →
+            </a>
+        </section>
+
+    </section>
+
+    <!-- PLATFORMS PAGE -->
+    <section class="page" id="platforms">
+
+        <div class="page-heading">
+            <p class="eyebrow" data-i18n="platformLabel">MƏHSULLARIMIZ</p>
+
+            <h1 data-i18n="platformTitle">Rəqəmsal platformalarımız</h1>
+
+            <p data-i18n="platformSubtitle">
+                Fərqli ehtiyaclar və sahələr üçün hazırlanmış texnoloji həllər.
+            </p>
+        </div>
+
+        <div class="platform-grid">
+
+            <!-- ACTIVE PLATFORM -->
+            <article class="platform-card active-card">
+                <span class="status" data-i18n="activePlatform">AKTİV PLATFORMA</span>
+
+                <div class="platform-info">
+                    <div class="platform-icon chart-icon">▥</div>
+
+                    <div>
+                        <h3>TrendApp</h3>
+
+                        <p data-i18n="trendShort">
+                            Müasir və etibarlı rəqəmsal həllərin inkişafına yönəlmiş innovativ İT layihəsi.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="dashboard">
+                    <div class="dashboard-sidebar">
+                        <i></i><i></i><i></i><i></i>
+                    </div>
+
+                    <div class="bars">
+                        <span></span><span></span><span></span>
+                        <span></span><span></span><span></span>
+                    </div>
+
+                    <div class="score">85</div>
+                    <div class="score">92</div>
+                </div>
+
+                <a href="https://www.trendapp.az/" target="_blank" rel="noopener" class="card-link">
+                    <span data-i18n="openPlatform">Platformaya keç</span> →
+                </a>
+            </article>
+
+            <!-- UPCOMING PLATFORM -->
+            <article class="platform-card coming-card">
+                <div class="platform-info">
+                    <div class="platform-icon layers-icon">◇</div>
+
+                    <div>
+                        <h3 data-i18n="newPlatform">Yeni platforma</h3>
+
+                        <p data-i18n="newPlatformText">
+                            Yeni rəqəmsal layihəmiz üzərində işləyirik.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="layers-art">
+                    <div></div><div></div><div></div>
+                </div>
+
+                <span class="coming-soon" data-i18n="comingSoon">Tezliklə</span>
+            </article>
+
+        </div>
+
+        <div class="platform-description">
+            <p class="eyebrow">TRENDAPP</p>
+
+            <h2 data-i18n="trendTitle">
+                Texnologiya ilə yeni imkanlar.
+            </h2>
+
+            <p data-i18n="trendDescription">
+                TrendApp innovativ startap və İT layihəsidir. Layihənin məqsədi istifadəçilərə müasir, rahat və etibarlı rəqəmsal həllər təqdim etmək, texnologiya sahəsində innovativ məhsul və xidmətlərin inkişafına töhfə verməkdir.
+            </p>
+
+            <a href="https://www.trendapp.az/" target="_blank" rel="noopener" class="primary-button" data-i18n="visitTrend">
+                TrendApp platformasına daxil ol
+            </a>
+        </div>
+
+    </section>
+
+    <!-- ABOUT PAGE -->
+    <section class="page" id="about">
+
+        <div class="page-heading">
+            <p class="eyebrow" data-i18n="aboutLabel">HAQQIMIZDA</p>
+
+            <h1 data-i18n="aboutTitle">Biz kimik?</h1>
+
+            <p data-i18n="aboutSubtitle">
+                İstifadəçilər üçün müasir və etibarlı rəqəmsal həllər yaradan innovativ İT layihəsi.
+            </p>
+        </div>
+
+        <div class="about-content">
+            <div class="about-main">
+                <h2 data-i18n="aboutHeading">
+                    İdeyaları faydalı rəqəmsal həllərə çeviririk.
+                </h2>
+
+                <p data-i18n="aboutText1">
+                    TrendApp innovativ startap və İT layihəsidir. Layihənin məqsədi istifadəçilərə müasir, rahat və etibarlı rəqəmsal həllər təqdim etməkdir.
+                </p>
+
+                <p data-i18n="aboutText2">
+                    Biz texnologiya sahəsində innovativ məhsul və xidmətlərin inkişafına töhfə verməyi hədəfləyirik. İstifadəçi ehtiyaclarını, rahatlığı və etibarlılığı əsas götürərək rəqəmsal imkanların inkişafı üzərində çalışırıq.
+                </p>
+
+                <p data-i18n="aboutText3">
+                    Bizim üçün texnologiya yeni imkanlar yaratmaq və real ehtiyaclara cavab vermək vasitəsidir. Buna görə də hər bir həllin faydalı, istifadəsi rahat və etibarlı olmasına önəm veririk.
+                </p>
+            </div>
+
+            <div class="about-values">
+                <article>
+                    <span>01</span>
+                    <h3 data-i18n="value1Title">İnnovasiya</h3>
+                    <p data-i18n="value1Text">Yeni ideyalar və müasir texnologiyalarla inkişaf.</p>
+                </article>
+
+                <article>
+                    <span>02</span>
+                    <h3 data-i18n="value2Title">Fərdi yanaşma</h3>
+                    <p data-i18n="value2Text">Hər layihənin ehtiyaclarına uyğun həllər.</p>
+                </article>
+
+                <article>
+                    <span>03</span>
+                    <h3 data-i18n="value3Title">Keyfiyyət</h3>
+                    <p data-i18n="value3Text">Etibarlı, rahat və funksional məhsullar.</p>
+                </article>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- CONTACT PAGE -->
+    <section class="page" id="contact">
+
+        <div class="page-heading">
+            <p class="eyebrow" data-i18n="contactLabel">ƏLAQƏ</p>
+
+            <h1 data-i18n="contactTitle">Gəlin birlikdə işləyək.</h1>
+
+            <p data-i18n="contactSubtitle">
+                Sualınız, layihə ideyanız və ya əməkdaşlıq təklifiniz var?
+                Bizimlə əlaqə saxlayın.
+            </p>
+        </div>
+
+        <div class="contact-grid">
+            <a href="mailto:info@trendapp.az" class="contact-item">
+                <span>✉</span>
+
+                <div>
+                    <h3 data-i18n="generalEmail">Ümumi müraciətlər</h3>
+                    <p>info@trendapp.az</p>
+                </div>
+            </a>
+
+            <a href="mailto:tanisupport@gmail.com" class="contact-item">
+                <span>✉</span>
+
+                <div>
+                    <h3 data-i18n="supportEmail">Tani / TestEva dəstəyi</h3>
+                    <p>tanisupport@gmail.com</p>
+                </div>
+            </a>
+
+            <a href="mailto:info@trendapp.az" class="contact-item">
+                <span>✉</span>
+
+                <div>
+                    <h3 data-i18n="businessEmail">Əməkdaşlıq və layihələr</h3>
+                    <p>info@trendapp.az</p>
+                </div>
+            </a>
+        </div>
+
+        <div class="contact-note">
+            <h2 data-i18n="contactNoteTitle">Yeni ideyanız var?</h2>
+
+            <p data-i18n="contactNoteText">
+                Layihəniz haqqında bizə yazın. İdeyanızı müzakirə etmək və uyğun
+                texnoloji həll tapmaqdan məmnun olarıq.
+            </p>
+        </div>
+
+    </section>
+
+</main>
+
+
+
+<footer class="footer">
     <div class="footer-bottom">
-      <span>© <span id="year"></span> TRENDAPP GROUP</span>
-      <span>BAKU, AZERBAIJAN</span>
-      <span data-i18n="footerRights">ALL RIGHTS RESERVED</span>
+        <span>© <span id="year"></span> TRENDAPP</span>
+
+        <div class="footer-legal">
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="terms.html">Terms of Use</a>
+            <a href="mailto:info@trendapp.az">info@trendapp.az</a>
+        </div>
     </div>
-  </footer>
+</footer>
+
+
+<script src="script.js"></script>
 </body>
 </html>
