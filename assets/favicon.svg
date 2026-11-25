@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="512" height="512" role="img" aria-label="TrendApp">
+<title>TrendApp</title>
+<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="0.36" gradientUnits="objectBoundingBox"><stop offset="0" stop-color="#ed3f19"/><stop offset="1" stop-color="#ff9d00"/></linearGradient></defs>
+<rect width="64" height="64" rx="14" fill="url(#g)"/>
+<path fill="#ffffff" d="M28.414025512695314 47.57159973144531V23.037152465820313H19.02441638183594V16.428400268554686H44.975583618164066V23.037152465820313H35.550775024414065V47.57159973144531Z"/>
+</svg>

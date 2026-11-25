@@ -25,7 +25,9 @@ jobs:
       - name: Collect site files
         run: |
           mkdir _site
-          cp *.html *.css *.js _site/
+          cp *.html *.css *.js *.txt *.webmanifest favicon.ico _site/
+          cp -r assets .well-known _site/
+          if [ -f CNAME ]; then cp CNAME _site/; fi
           touch _site/.nojekyll
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
