@@ -11,10 +11,23 @@
   --line: #e9ebef;
   --page: #ffffff;
   --soft: #f7f8fa;
+  --body-text: #515968;
+  --accent-soft: #fff1eb;
+}
+
+body.dark-theme {
+  --accent: #ff7946;
+  --text: #f4f5f8;
+  --muted: #b6bdca;
+  --line: #303949;
+  --page: #11151f;
+  --soft: #1b2230;
+  --body-text: #c9ceda;
+  --accent-soft: #38271f;
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Onest', system-ui, -apple-system, 'Segoe UI', Arial, sans-serif;
   background: var(--page);
   color: var(--text);
   line-height: 1.7;
@@ -60,7 +73,7 @@ body {
 .languages button:hover,
 .languages button.active {
   color: var(--accent);
-  background: #fff1eb;
+  background: var(--accent-soft);
 }
 
 .container {
@@ -114,7 +127,7 @@ h2 {
 }
 
 section p {
-  color: #515968;
+  color: var(--body-text);
   font-size: 15px;
 }
 

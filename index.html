@@ -4,14 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>TrendApp — Rəqəmsal həllər</title>
-    <meta name="description" content="TrendApp — innovativ startap və İT layihəsi. Müasir, rahat və etibarlı rəqəmsal həllər.">
+    <title>TrendApp Group — Rəqəmsal həllər</title>
+    <meta name="description" content="TrendApp Group — müxtəlif sahələr üçün proqram təminatı, veb platformalar və rəqəmsal məhsullar hazırlayan texnologiya şirkəti.">
 
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="TrendApp Group — Rəqəmsal həllər">
+    <meta property="og:description" content="Müasir texnologiyalar, innovativ yanaşma və müxtəlif sahələr üçün rəqəmsal həllər.">
+    <meta name="theme-color" content="#f15a24">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23f15a24'/%3E%3Ctext x='32' y='44' font-family='Arial' font-size='34' font-weight='800' fill='white' text-anchor='middle'%3ET%3C/text%3E%3C/svg%3E">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 
 <body>
+<script>
+    // Apply the saved theme before the first paint (no light flash)
+    try {
+        if (localStorage.getItem("trendapp-theme") === "dark") {
+            document.body.classList.add("dark-theme");
+        }
+    } catch (error) {}
+</script>
 
 <header class="header">
     <a href="#home" class="logo" aria-label="TrendApp home">
@@ -23,24 +39,23 @@
         <a href="#platforms" data-i18n="navPlatforms">Platformalar</a>
         <a href="#about" data-i18n="navAbout">Haqqımızda</a>
         <a href="#contact" data-i18n="navContact">Əlaqə</a>
+        <a href="https://www.trendapp.az/signup" class="nav-register" data-i18n="contactButton">Qeydiyyat</a>
     </nav>
 
     <div class="header-right">
-        <div class="languages">
-            <button data-lang="az" class="active">AZ</button>
-            <button data-lang="ru">RU</button>
-            <button data-lang="en">EN</button>
-            <button data-lang="tr">TR</button>
+        <div class="languages" role="group" aria-label="Language">
+            <button type="button" data-lang="az" class="active" aria-pressed="true">AZ</button>
+            <button type="button" data-lang="ru" aria-pressed="false">RU</button>
+            <button type="button" data-lang="en" aria-pressed="false">EN</button>
+            <button type="button" data-lang="tr" aria-pressed="false">TR</button>
         </div>
 
         <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch to dark theme">☾</button>
 
-        <a href="https://www.trendapp.az/signup" class="contact-button" data-i18n="contactButton">
-            Qeydiyyat
-        </a>
+        <a href="https://www.trendapp.az/signup" class="contact-button" data-i18n="contactButton">Qeydiyyat</a>
     </div>
 
-    <button class="menu-toggle" id="menu-toggle" type="button" aria-label="Open navigation">☰</button>
+    <button class="menu-toggle" id="menu-toggle" type="button" aria-label="Open navigation" aria-controls="nav" aria-expanded="false">☰</button>
 </header>
 
 <main>
@@ -52,20 +67,14 @@
             <div class="hero-content">
                 <p class="eyebrow" data-i18n="heroLabel">TRENDAPP GROUP · RƏQƏMSAL HƏLLƏR</p>
 
-                <h1 data-i18n="heroTitle">
-                    İnnovativ ideyalar. Rəqəmsal həllər.
-                </h1>
+                <h1 data-i18n="heroTitle">Layihələrimiz bir platformada.</h1>
 
-                <p class="hero-description" data-i18n="heroText">
-                    TrendApp istifadəçilərə müasir, rahat və etibarlı rəqəmsal həllər təqdim edən innovativ startap və İT layihəsidir.
-                </p>
+                <p class="hero-description" data-i18n="heroText">Müasir texnologiyalar, innovativ yanaşma və müxtəlif sahələr üçün rəqəmsal həllər.</p>
 
-                <a href="#platforms" class="primary-button" data-i18n="heroButton">
-                    Platformalara bax
-                </a>
+                <a href="#platforms" class="primary-button" data-i18n="heroButton">Platformalara bax</a>
             </div>
 
-            <div class="hero-visual">
+            <div class="hero-visual" aria-hidden="true">
                 <div class="orange-orbit orbit-one"></div>
                 <div class="orange-orbit orbit-two"></div>
 
@@ -74,10 +83,10 @@
                 <div class="connection connection-three"></div>
                 <div class="connection connection-four"></div>
 
-                <div class="floating-icon icon-chart">▥</div>
-                <div class="floating-icon icon-cap">◆</div>
-                <div class="floating-icon icon-users">●●<br>●●</div>
-                <div class="floating-icon icon-check">✓</div>
+                <div class="floating-icon icon-chart" aria-hidden="true">▥</div>
+                <div class="floating-icon icon-cap" aria-hidden="true">◆</div>
+                <div class="floating-icon icon-users" aria-hidden="true">●●<br>●●</div>
+                <div class="floating-icon icon-check" aria-hidden="true">✓</div>
 
                 <div class="main-logo-card">
                     <span class="logo-trend">TREND</span><span class="logo-app">app</span>
@@ -88,13 +97,9 @@
         <section class="home-intro">
             <p class="eyebrow" data-i18n="introLabel">TRENDAPP GROUP</p>
 
-            <h2 data-i18n="introTitle">
-                Texnologiya ilə yeni imkanlar yaradırıq.
-            </h2>
+            <h2 data-i18n="introTitle">Texnologiya ilə yeni imkanlar yaradırıq.</h2>
 
-            <p data-i18n="introText">
-                Məqsədimiz istifadəçilərin ehtiyaclarına cavab verən rəqəmsal məhsul və xidmətlər yaratmaq, texnologiya sahəsində innovasiyaların inkişafına töhfə verməkdir.
-            </p>
+            <p data-i18n="introText">Bizneslərin və insanların ehtiyaclarına uyğun proqram təminatı hazırlayır, ideyaları işlək rəqəmsal məhsullara çeviririk.</p>
 
             <a href="#about" class="card-link" data-i18n="learnMore">Daha ətraflı →</a>
         </section>
@@ -104,58 +109,46 @@
             <div class="section-heading">
                 <p class="eyebrow" data-i18n="directionsLabel">NƏ İŞLƏYİRİK?</p>
 
-                <h2 data-i18n="directionsTitle">
-                    Rəqəmsal gələcək üçün innovativ yanaşma.
-                </h2>
+                <h2 data-i18n="directionsTitle">Fərqli sahələr üçün texnologiya.</h2>
 
-                <p data-i18n="directionsText">
-                    Müasir texnologiyalar əsasında rahat, etibarlı və faydalı rəqəmsal məhsul və xidmətlərin inkişafı.
-                </p>
+                <p data-i18n="directionsText">Müxtəlif ehtiyaclara uyğun müasir proqram təminatı və rəqəmsal məhsullar.</p>
             </div>
 
             <div class="directions-grid">
                 <article class="direction-card">
                     <span>01</span>
-                    <div class="direction-icon">⌘</div>
+                    <div class="direction-icon" aria-hidden="true">⌘</div>
 
-                    <h3 data-i18n="direction1Title">Rəqəmsal məhsullar</h3>
+                    <h3 data-i18n="direction1Title">Proqram təminatı</h3>
 
-                    <p data-i18n="direction1Text">
-                        İstifadəçilərin ehtiyaclarına cavab verən müasir rəqəmsal məhsulların inkişafı.
-                    </p>
+                    <p data-i18n="direction1Text">Biznes və təşkilatlar üçün xüsusi proqram təminatının hazırlanması.</p>
                 </article>
 
                 <article class="direction-card">
                     <span>02</span>
-                    <div class="direction-icon">▦</div>
+                    <div class="direction-icon" aria-hidden="true">▦</div>
 
-                    <h3 data-i18n="direction2Title">Proqram təminatı</h3>
+                    <h3 data-i18n="direction2Title">Veb platformalar</h3>
 
-                    <p data-i18n="direction2Text">
-                        Rahat və etibarlı istifadə təcrübəsi təqdim edən proqram həlləri.
-                    </p>
+                    <p data-i18n="direction2Text">Müasir, funksional və istifadəçi dostu veb platformaların yaradılması.</p>
                 </article>
 
                 <article class="direction-card">
                     <span>03</span>
-                    <div class="direction-icon">✧</div>
+                    <div class="direction-icon" aria-hidden="true">✧</div>
 
-                    <h3 data-i18n="direction3Title">İnnovativ texnologiyalar</h3>
+                    <h3 data-i18n="direction3Title">Süni intellekt</h3>
 
-                    <p data-i18n="direction3Text">
-                        Texnologiya sahəsində yeni yanaşmaların və innovativ həllərin təşviqi.
-                    </p>
+                    <p data-i18n="direction3Text">Süni intellekt texnologiyalarının rəqəmsal məhsullara inteqrasiyası.</p>
                 </article>
 
                 <article class="direction-card">
                     <span>04</span>
-                    <div class="direction-icon">◎</div>
+                    <div class="direction-icon" aria-hidden="true">◎</div>
 
-                    <h3 data-i18n="direction4Title">Rəqəmsal xidmətlər</h3>
+                    <h3 data-i18n="direction4Title">Rəqəmsal sistemlər</h3>
 
-                    <p data-i18n="direction4Text">
-                        İstifadəçilərin gündəlik ehtiyaclarını asanlaşdıran rəqəmsal xidmətlər.
-                    </p>
+                    <p data-i18n="direction4Text">İş proseslərini asanlaşdıran və optimallaşdıran sistemlər.</p>
                 </article>
             </div>
         </section>
@@ -165,24 +158,18 @@
             <div class="why-content">
                 <p class="eyebrow" data-i18n="whyLabel">NİYƏ TRENDAPP?</p>
 
-                <h2 data-i18n="whyTitle">
-                    İnnovasiyanı real həllərə çeviririk.
-                </h2>
+                <h2 data-i18n="whyTitle">İdeyadan hazır rəqəmsal məhsula qədər.</h2>
 
-                <p data-i18n="whyText">
-                    TrendApp-in əsas məqsədi texnologiyanın imkanlarından istifadə edərək istifadəçilərə fayda verən həllər yaratmaqdır. Müasir yanaşma, rahat istifadə təcrübəsi və etibarlılıq layihələrimizin əsas prinsipləridir.
-                </p>
+                <p data-i18n="whyText">Biz hər layihənin arxasında duran ehtiyacı anlamağa çalışırıq. Məqsədimiz yalnız proqram yazmaq deyil, real problemləri həll edən, rahat və faydalı texnoloji məhsullar yaratmaqdır.</p>
 
-                <a href="#about" class="primary-button" data-i18n="whyButton">
-                    Şirkətimiz haqqında
-                </a>
+                <a href="#about" class="primary-button" data-i18n="whyButton">Şirkətimiz haqqında</a>
             </div>
 
             <div class="why-points">
-                <div><span>✓</span><p data-i18n="why1">Müasir texnologiyalardan istifadə</p></div>
-                <div><span>✓</span><p data-i18n="why2">Layihəyə uyğun fərdi yanaşma</p></div>
-                <div><span>✓</span><p data-i18n="why3">İstifadəçi təcrübəsinə diqqət</p></div>
-                <div><span>✓</span><p data-i18n="why4">Davamlı inkişaf və yenilənmə</p></div>
+                <div><span aria-hidden="true">✓</span><p data-i18n="why1">Müasir texnologiyalardan istifadə</p></div>
+                <div><span aria-hidden="true">✓</span><p data-i18n="why2">Layihəyə uyğun fərdi yanaşma</p></div>
+                <div><span aria-hidden="true">✓</span><p data-i18n="why3">İstifadəçi təcrübəsinə diqqət</p></div>
+                <div><span aria-hidden="true">✓</span><p data-i18n="why4">Davamlı inkişaf və yenilənmə</p></div>
             </div>
         </section>
 
@@ -191,18 +178,12 @@
             <div>
                 <p class="eyebrow" data-i18n="previewLabel">EKOSİSTEMİMİZ</p>
 
-                <h2 data-i18n="previewTitle">
-                    Rəqəmsal məhsullarımızı kəşf edin.
-                </h2>
+                <h2 data-i18n="previewTitle">Rəqəmsal məhsullarımızı kəşf edin.</h2>
 
-                <p data-i18n="previewText">
-                    Müxtəlif sahələr üçün hazırladığımız platformalarla tanış olun.
-                </p>
+                <p data-i18n="previewText">Müxtəlif sahələr üçün hazırladığımız platformalarla tanış olun.</p>
             </div>
 
-            <a href="#platforms" class="primary-button" data-i18n="previewButton">
-                Bütün platformalar →
-            </a>
+            <a href="#platforms" class="primary-button" data-i18n="previewButton">Bütün platformalar →</a>
         </section>
 
     </section>
@@ -215,9 +196,7 @@
 
             <h1 data-i18n="platformTitle">Rəqəmsal platformalarımız</h1>
 
-            <p data-i18n="platformSubtitle">
-                Fərqli ehtiyaclar və sahələr üçün hazırlanmış texnoloji həllər.
-            </p>
+            <p data-i18n="platformSubtitle">Fərqli ehtiyaclar və sahələr üçün hazırlanmış texnoloji həllər.</p>
         </div>
 
         <div class="platform-grid">
@@ -227,18 +206,16 @@
                 <span class="status" data-i18n="activePlatform">AKTİV PLATFORMA</span>
 
                 <div class="platform-info">
-                    <div class="platform-icon chart-icon">▥</div>
+                    <div class="platform-icon chart-icon" aria-hidden="true">▥</div>
 
                     <div>
                         <h3>TrendApp</h3>
 
-                        <p data-i18n="trendShort">
-                            Müasir və etibarlı rəqəmsal həllərin inkişafına yönəlmiş innovativ İT layihəsi.
-                        </p>
+                        <p data-i18n="trendShort">Kompetensiya, koqnitiv qabiliyyət və dil qiymətləndirmə platforması.</p>
                     </div>
                 </div>
 
-                <div class="dashboard">
+                <div class="dashboard" aria-hidden="true">
                     <div class="dashboard-sidebar">
                         <i></i><i></i><i></i><i></i>
                     </div>
@@ -260,18 +237,16 @@
             <!-- UPCOMING PLATFORM -->
             <article class="platform-card coming-card">
                 <div class="platform-info">
-                    <div class="platform-icon layers-icon">◇</div>
+                    <div class="platform-icon layers-icon" aria-hidden="true">◇</div>
 
                     <div>
                         <h3 data-i18n="newPlatform">Yeni platforma</h3>
 
-                        <p data-i18n="newPlatformText">
-                            Yeni rəqəmsal layihəmiz üzərində işləyirik.
-                        </p>
+                        <p data-i18n="newPlatformText">Yeni rəqəmsal layihəmiz üzərində işləyirik.</p>
                     </div>
                 </div>
 
-                <div class="layers-art">
+                <div class="layers-art" aria-hidden="true">
                     <div></div><div></div><div></div>
                 </div>
 
@@ -283,17 +258,11 @@
         <div class="platform-description">
             <p class="eyebrow">TRENDAPP</p>
 
-            <h2 data-i18n="trendTitle">
-                Texnologiya ilə yeni imkanlar.
-            </h2>
+            <h2 data-i18n="trendTitle">İnsan potensialını ölçmək üçün texnologiya.</h2>
 
-            <p data-i18n="trendDescription">
-                TrendApp innovativ startap və İT layihəsidir. Layihənin məqsədi istifadəçilərə müasir, rahat və etibarlı rəqəmsal həllər təqdim etmək, texnologiya sahəsində innovativ məhsul və xidmətlərin inkişafına töhfə verməkdir.
-            </p>
+            <p data-i18n="trendDescription">TrendApp namizədlərin və əməkdaşların peşəkar uyğunluğunu daha obyektiv qiymətləndirmək üçün hazırlanmış rəqəmsal platformadır. Sistem kompetensiya qiymətləndirməsi, koqnitiv qabiliyyət testləri və dil bacarıqlarının yoxlanılmasını bir məkanda birləşdirir. Kamera nəzarətli testlər və süni intellekt dəstəyi ilə hazırlanmış hesabatlar istifadəçilərə və şirkətlərə daha əsaslandırılmış qərarlar verməyə kömək edir.</p>
 
-            <a href="https://www.trendapp.az/" target="_blank" rel="noopener" class="primary-button" data-i18n="visitTrend">
-                TrendApp platformasına daxil ol
-            </a>
+            <a href="https://www.trendapp.az/" target="_blank" rel="noopener" class="primary-button" data-i18n="visitTrend">TrendApp platformasına daxil ol</a>
         </div>
 
     </section>
@@ -306,28 +275,18 @@
 
             <h1 data-i18n="aboutTitle">Biz kimik?</h1>
 
-            <p data-i18n="aboutSubtitle">
-                İstifadəçilər üçün müasir və etibarlı rəqəmsal həllər yaradan innovativ İT layihəsi.
-            </p>
+            <p data-i18n="aboutSubtitle">İdeyaları rəqəmsal məhsullara çevirən gənc texnologiya şirkəti.</p>
         </div>
 
         <div class="about-content">
             <div class="about-main">
-                <h2 data-i18n="aboutHeading">
-                    İdeyaları faydalı rəqəmsal həllərə çeviririk.
-                </h2>
+                <h2 data-i18n="aboutHeading">Gələcəyin rəqəmsal həllərini bu gündən yaradırıq.</h2>
 
-                <p data-i18n="aboutText1">
-                    TrendApp innovativ startap və İT layihəsidir. Layihənin məqsədi istifadəçilərə müasir, rahat və etibarlı rəqəmsal həllər təqdim etməkdir.
-                </p>
+                <p data-i18n="aboutText1">TrendApp müxtəlif sahələr üçün proqram təminatı və rəqəmsal məhsullar hazırlayan gənc texnologiya şirkətidir. Məqsədimiz real ehtiyacları anlamaq, innovativ ideyaları işlək texnoloji həllərə çevirmək və istifadəçilərin gündəlik işini asanlaşdırmaqdır.</p>
 
-                <p data-i18n="aboutText2">
-                    Biz texnologiya sahəsində innovativ məhsul və xidmətlərin inkişafına töhfə verməyi hədəfləyirik. İstifadəçi ehtiyaclarını, rahatlığı və etibarlılığı əsas götürərək rəqəmsal imkanların inkişafı üzərində çalışırıq.
-                </p>
+                <p data-i18n="aboutText2">Biz hər layihəyə fərdi yanaşırıq. Biznes, təhsil, insan resursları və digər sahələr üçün müasir veb platformalar, idarəetmə sistemləri və xüsusi proqram təminatı üzərində işləyirik.</p>
 
-                <p data-i18n="aboutText3">
-                    Bizim üçün texnologiya yeni imkanlar yaratmaq və real ehtiyaclara cavab vermək vasitəsidir. Buna görə də hər bir həllin faydalı, istifadəsi rahat və etibarlı olmasına önəm veririk.
-                </p>
+                <p data-i18n="aboutText3">Bizim üçün texnologiya sadəcə kod deyil. O, problemləri həll etmək, prosesləri optimallaşdırmaq və yeni imkanlar yaratmaq vasitəsidir. Buna görə də dizayn, funksionallıq, təhlükəsizlik və istifadə rahatlığını hər layihənin əsas hissəsi hesab edirik.</p>
             </div>
 
             <div class="about-values">
@@ -361,48 +320,43 @@
 
             <h1 data-i18n="contactTitle">Gəlin birlikdə işləyək.</h1>
 
-            <p data-i18n="contactSubtitle">
-                Sualınız, layihə ideyanız və ya əməkdaşlıq təklifiniz var?
-                Bizimlə əlaqə saxlayın.
-            </p>
+            <p data-i18n="contactSubtitle">Sualınız, layihə ideyanız və ya əməkdaşlıq təklifiniz var? Bizimlə əlaqə saxlayın.</p>
         </div>
 
         <div class="contact-grid">
-            <a href="mailto:info@trendapp.az" class="contact-item">
-                <span>✉</span>
-
-                <div>
-                    <h3 data-i18n="generalEmail">Ümumi müraciətlər</h3>
-                    <p>info@trendapp.az</p>
-                </div>
+            <a href="tel:+994553313311" class="contact-card contact-card--accent">
+                <span class="contact-icon" aria-hidden="true">☎</span>
+                <h3 data-i18n="phoneLabel">Telefon</h3>
+                <p class="contact-hint" data-i18n="phoneHint">Sualınız var? Birbaşa zəng edin.</p>
+                <span class="contact-value">+994 55 331 33 11</span>
             </a>
 
-            <a href="mailto:tanisupport@gmail.com" class="contact-item">
-                <span>✉</span>
-
-                <div>
-                    <h3 data-i18n="supportEmail">Tani / TestEva dəstəyi</h3>
-                    <p>tanisupport@gmail.com</p>
-                </div>
+            <a href="mailto:info@trendapp.az" class="contact-card">
+                <span class="contact-icon" aria-hidden="true">✉</span>
+                <h3 data-i18n="supportEmail">Dəstək</h3>
+                <p class="contact-hint" data-i18n="supportHint">Platforma ilə bağlı suallar və texniki problemlər.</p>
+                <span class="contact-value">info@trendapp.az</span>
             </a>
 
-            <a href="mailto:info@trendapp.az" class="contact-item">
-                <span>✉</span>
-
-                <div>
-                    <h3 data-i18n="businessEmail">Əməkdaşlıq və layihələr</h3>
-                    <p>info@trendapp.az</p>
-                </div>
+            <a href="mailto:trendapp2026@gmail.com" class="contact-card">
+                <span class="contact-icon" aria-hidden="true">✦</span>
+                <h3 data-i18n="offersEmail">Təkliflər və əməkdaşlıq</h3>
+                <p class="contact-hint" data-i18n="offersHint">Layihə ideyaları, tərəfdaşlıq və biznes təklifləri.</p>
+                <span class="contact-value">trendapp2026@gmail.com</span>
             </a>
         </div>
 
         <div class="contact-note">
-            <h2 data-i18n="contactNoteTitle">Yeni ideyanız var?</h2>
+            <div>
+                <h2 data-i18n="contactNoteTitle">Yeni ideyanız var?</h2>
 
-            <p data-i18n="contactNoteText">
-                Layihəniz haqqında bizə yazın. İdeyanızı müzakirə etmək və uyğun
-                texnoloji həll tapmaqdan məmnun olarıq.
-            </p>
+                <p data-i18n="contactNoteText">Layihəniz haqqında bizə yazın. İdeyanızı müzakirə etmək və uyğun texnoloji həll tapmaqdan məmnun olarıq.</p>
+            </div>
+
+            <div class="contact-note-actions">
+                <a href="mailto:trendapp2026@gmail.com" class="primary-button" data-i18n="noteButton">Təklif göndər</a>
+                <a href="tel:+994553313311" class="secondary-button" data-i18n="callButton">Zəng et</a>
+            </div>
         </div>
 
     </section>
@@ -410,14 +364,14 @@
 </main>
 
 
-
 <footer class="footer">
     <div class="footer-bottom">
-        <span>© <span id="year"></span> TRENDAPP</span>
+        <span>© <span id="year"></span> TRENDAPP GROUP. <span data-i18n="copyright">Bütün hüquqlar qorunur.</span></span>
 
         <div class="footer-legal">
-            <a href="privacy.html">Privacy Policy</a>
-            <a href="terms.html">Terms of Use</a>
+            <a href="privacy.html" data-i18n="privacyLink">Məxfilik Siyasəti</a>
+            <a href="terms.html" data-i18n="termsLink">İstifadə Şərtləri</a>
+            <a href="tel:+994553313311">+994 55 331 33 11</a>
             <a href="mailto:info@trendapp.az">info@trendapp.az</a>
         </div>
     </div>

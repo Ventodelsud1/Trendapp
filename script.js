@@ -47,9 +47,6 @@ const translations = {
         newPlatform: "Yeni platforma",
         newPlatformText: "Yeni rəqəmsal layihəmiz üzərində işləyirik.",
         comingSoon: "Tezliklə",
-        yourProject: "Sizin layihəniz?",
-        yourProjectText: "Yeni ideyanız və ya əməkdaşlıq təklifiniz varsa, bizimlə əlaqə saxlayın.",
-        contactUs: "Əlaqə saxla",
         trendTitle: "İnsan potensialını ölçmək üçün texnologiya.",
         trendDescription: "TrendApp namizədlərin və əməkdaşların peşəkar uyğunluğunu daha obyektiv qiymətləndirmək üçün hazırlanmış rəqəmsal platformadır. Sistem kompetensiya qiymətləndirməsi, koqnitiv qabiliyyət testləri və dil bacarıqlarının yoxlanılmasını bir məkanda birləşdirir. Kamera nəzarətli testlər və süni intellekt dəstəyi ilə hazırlanmış hesabatlar istifadəçilərə və şirkətlərə daha əsaslandırılmış qərarlar verməyə kömək edir.",
         visitTrend: "TrendApp platformasına daxil ol",
@@ -69,12 +66,19 @@ const translations = {
         contactLabel: "ƏLAQƏ",
         contactTitle: "Gəlin birlikdə işləyək.",
         contactSubtitle: "Sualınız, layihə ideyanız və ya əməkdaşlıq təklifiniz var? Bizimlə əlaqə saxlayın.",
-        generalEmail: "Ümumi müraciətlər",
-        supportEmail: "Tani / TestEva dəstəyi",
-        businessEmail: "Əməkdaşlıq və layihələr",
+        phoneLabel: "Telefon",
+        phoneHint: "Sualınız var? Birbaşa zəng edin.",
+        supportEmail: "Dəstək",
+        supportHint: "Platforma ilə bağlı suallar və texniki problemlər.",
+        offersEmail: "Təkliflər və əməkdaşlıq",
+        offersHint: "Layihə ideyaları, tərəfdaşlıq və biznes təklifləri.",
+        noteButton: "Təklif göndər",
+        callButton: "Zəng et",
+        privacyLink: "Məxfilik Siyasəti",
+        termsLink: "İstifadə Şərtləri",
+        copyright: "Bütün hüquqlar qorunur.",
         contactNoteTitle: "Yeni ideyanız var?",
-        contactNoteText: "Layihəniz haqqında bizə yazın. İdeyanızı müzakirə etmək və uyğun texnoloji həll tapmaqdan məmnun olarıq.",
-        copyright: "Bütün hüquqlar qorunur."
+        contactNoteText: "Layihəniz haqqında bizə yazın. İdeyanızı müzakirə etmək və uyğun texnoloji həll tapmaqdan məmnun olarıq."
     },
 
     ru: {
@@ -123,9 +127,6 @@ const translations = {
         newPlatform: "Новая платформа",
         newPlatformText: "Мы работаем над новым цифровым проектом.",
         comingSoon: "Скоро",
-        yourProject: "Ваш проект?",
-        yourProjectText: "Есть идея или предложение о сотрудничестве? Свяжитесь с нами.",
-        contactUs: "Связаться",
         trendTitle: "Технологии для оценки человеческого потенциала.",
         trendDescription: "TrendApp — цифровая платформа для более объективной оценки профессионального соответствия кандидатов и сотрудников. Система объединяет оценку компетенций, тесты когнитивных способностей и проверку языковых навыков. Тестирование с контролем через камеру и отчёты с поддержкой искусственного интеллекта помогают пользователям и компаниям принимать более обоснованные решения.",
         visitTrend: "Открыть платформу TrendApp",
@@ -145,12 +146,19 @@ const translations = {
         contactLabel: "КОНТАКТЫ",
         contactTitle: "Давайте работать вместе.",
         contactSubtitle: "Есть вопрос, идея проекта или предложение о сотрудничестве? Напишите нам.",
-        generalEmail: "Общие вопросы",
-        supportEmail: "Поддержка Tani / TestEva",
-        businessEmail: "Сотрудничество и проекты",
+        phoneLabel: "Телефон",
+        phoneHint: "Есть вопрос? Позвоните нам напрямую.",
+        supportEmail: "Поддержка",
+        supportHint: "Вопросы по платформе и технические проблемы.",
+        offersEmail: "Предложения и сотрудничество",
+        offersHint: "Идеи проектов, партнёрство и деловые предложения.",
+        noteButton: "Отправить предложение",
+        callButton: "Позвонить",
+        privacyLink: "Политика конфиденциальности",
+        termsLink: "Условия использования",
+        copyright: "Все права защищены.",
         contactNoteTitle: "Есть новая идея?",
-        contactNoteText: "Расскажите нам о своём проекте. Мы будем рады обсудить вашу идею и найти подходящее технологическое решение.",
-        copyright: "Все права защищены."
+        contactNoteText: "Расскажите нам о своём проекте. Мы будем рады обсудить вашу идею и найти подходящее технологическое решение."
     },
 
     en: {
@@ -199,9 +207,6 @@ const translations = {
         newPlatform: "New platform",
         newPlatformText: "We are working on a new digital project.",
         comingSoon: "Coming soon",
-        yourProject: "Your project?",
-        yourProjectText: "Have a new idea or partnership proposal? Get in touch with us.",
-        contactUs: "Contact us",
         trendTitle: "Technology for measuring human potential.",
         trendDescription: "TrendApp is a digital platform designed to provide a more objective assessment of candidates' and employees' professional suitability. It combines competency assessment, cognitive ability tests and language skills evaluation. Camera-supervised tests and AI-supported reports help individuals and businesses make more informed decisions.",
         visitTrend: "Visit TrendApp platform",
@@ -221,12 +226,19 @@ const translations = {
         contactLabel: "CONTACT",
         contactTitle: "Let's work together.",
         contactSubtitle: "Have a question, project idea or partnership proposal? Get in touch.",
-        generalEmail: "General enquiries",
-        supportEmail: "Tani / TestEva support",
-        businessEmail: "Partnerships and projects",
+        phoneLabel: "Phone",
+        phoneHint: "Have a question? Call us directly.",
+        supportEmail: "Support",
+        supportHint: "Platform questions and technical issues.",
+        offersEmail: "Proposals and partnerships",
+        offersHint: "Project ideas, partnerships and business proposals.",
+        noteButton: "Send a proposal",
+        callButton: "Call us",
+        privacyLink: "Privacy Policy",
+        termsLink: "Terms of Use",
+        copyright: "All rights reserved.",
         contactNoteTitle: "Have a new idea?",
-        contactNoteText: "Tell us about your project. We would be happy to discuss your idea and find the right technology solution.",
-        copyright: "All rights reserved."
+        contactNoteText: "Tell us about your project. We would be happy to discuss your idea and find the right technology solution."
     },
 
     tr: {
@@ -275,9 +287,6 @@ const translations = {
         newPlatform: "Yeni platform",
         newPlatformText: "Yeni dijital projemiz üzerinde çalışıyoruz.",
         comingSoon: "Yakında",
-        yourProject: "Sizin projeniz?",
-        yourProjectText: "Yeni bir fikriniz veya iş birliği teklifiniz mi var? Bizimle iletişime geçin.",
-        contactUs: "İletişime geç",
         trendTitle: "İnsan potansiyelini ölçmek için teknoloji.",
         trendDescription: "TrendApp, adayların ve çalışanların mesleki uygunluğunu daha objektif değerlendirmek için geliştirilmiş dijital bir platformdur. Sistem; yetkinlik değerlendirmesini, bilişsel beceri testlerini ve dil becerilerinin ölçülmesini bir araya getirir. Kamera denetimli testler ve yapay zekâ destekli raporlar bireylerin ve şirketlerin daha bilinçli kararlar almasına yardımcı olur.",
         visitTrend: "TrendApp platformunu ziyaret et",
@@ -297,12 +306,19 @@ const translations = {
         contactLabel: "İLETİŞİM",
         contactTitle: "Birlikte çalışalım.",
         contactSubtitle: "Sorunuz, proje fikriniz veya iş birliği teklifiniz mi var? Bize ulaşın.",
-        generalEmail: "Genel sorular",
-        supportEmail: "Tani / TestEva desteği",
-        businessEmail: "İş birlikleri ve projeler",
+        phoneLabel: "Telefon",
+        phoneHint: "Sorunuz mu var? Bizi doğrudan arayın.",
+        supportEmail: "Destek",
+        supportHint: "Platformla ilgili sorular ve teknik sorunlar.",
+        offersEmail: "Teklifler ve iş birlikleri",
+        offersHint: "Proje fikirleri, ortaklıklar ve iş teklifleri.",
+        noteButton: "Teklif gönder",
+        callButton: "Ara",
+        privacyLink: "Gizlilik Politikası",
+        termsLink: "Kullanım Koşulları",
+        copyright: "Tüm hakları saklıdır.",
         contactNoteTitle: "Yeni bir fikriniz mi var?",
-        contactNoteText: "Projenizi bize anlatın. Fikrinizi görüşmekten ve uygun teknoloji çözümünü bulmaktan memnuniyet duyarız.",
-        copyright: "Tüm hakları saklıdır."
+        contactNoteText: "Projenizi bize anlatın. Fikrinizi görüşmekten ve uygun teknoloji çözümünü bulmaktan memnuniyet duyarız."
     }
 };
 
@@ -324,8 +340,7 @@ function setLanguage(language) {
         const key = element.dataset.i18n;
 
         if (dictionary[key]) {
-            // innerHTML preserves <br> and <em> formatting in translations
-            element.innerHTML = dictionary[key];
+            element.textContent = dictionary[key];
         }
     });
 
@@ -353,7 +368,7 @@ function setLanguage(language) {
 // PAGE NAVIGATION
 // ===================================
 
-function showPage(pageName) {
+function showPage(pageName, instant) {
     const pages = document.querySelectorAll(".page");
     const nav = document.getElementById("nav");
     const menuButton = document.getElementById("menu-toggle");
@@ -399,7 +414,7 @@ function showPage(pageName) {
     // Scroll to top
     window.scrollTo({
         top: 0,
-        behavior: "smooth"
+        behavior: instant ? "instant" : "smooth"
     });
 }
 
@@ -431,13 +446,7 @@ document.addEventListener("click", function(event) {
 });
 
 
-// Browser back and forward buttons
-window.addEventListener("popstate", function() {
-    showPage(window.location.hash.substring(1) || "home");
-});
-
-
-// Direct hash changes
+// Back/forward buttons and direct hash changes
 window.addEventListener("hashchange", function() {
     showPage(window.location.hash.substring(1) || "home");
 });
@@ -511,25 +520,37 @@ function initMobileMenu() {
         return;
     }
 
-    menuButton.addEventListener("click", function() {
-        const isOpen = nav.classList.toggle("open");
-
-        menuButton.setAttribute(
-            "aria-expanded",
-            isOpen ? "true" : "false"
-        );
-
+    function setMenu(isOpen) {
+        nav.classList.toggle("open", isOpen);
+        menuButton.setAttribute("aria-expanded", isOpen ? "true" : "false");
+        menuButton.setAttribute("aria-label", isOpen ? "Close navigation" : "Open navigation");
         menuButton.textContent = isOpen ? "×" : "☰";
+    }
+
+    menuButton.addEventListener("click", function() {
+        setMenu(!nav.classList.contains("open"));
     });
 
-    // Close menu after clicking a navigation link
-    nav.querySelectorAll("a").forEach(function(link) {
-        link.addEventListener("click", function() {
-            nav.classList.remove("open");
-            menuButton.setAttribute("aria-expanded", "false");
-            menuButton.textContent = "☰";
-        });
+    // Close when tapping outside the menu
+    document.addEventListener("click", function(event) {
+        if (
+            nav.classList.contains("open") &&
+            !nav.contains(event.target) &&
+            !menuButton.contains(event.target)
+        ) {
+            setMenu(false);
+        }
     });
+
+    // Close with Escape
+    document.addEventListener("keydown", function(event) {
+        if (event.key === "Escape" && nav.classList.contains("open")) {
+            setMenu(false);
+            menuButton.focus();
+        }
+    });
+
+    // Navigation links close the menu through showPage()
 }
 
 
@@ -547,45 +568,48 @@ function initFooterYear() {
 
 
 // ===================================
-// REGISTRATION MODAL
+// REVEAL ON SCROLL
 // ===================================
 
-function initRegisterModal() {
-    const registerModal = document.getElementById("register-modal");
-    const registerOpen = document.getElementById("register-open");
-    const registerClose = document.getElementById("register-close");
+function initReveal() {
+    const items = document.querySelectorAll(
+        ".direction-card, .why-points > div, .about-values article, .contact-card"
+    );
 
-    if (!registerModal) {
+    const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+    if (!("IntersectionObserver" in window) || reducedMotion) {
         return;
     }
 
-    if (registerOpen) {
-        registerOpen.addEventListener("click", function(event) {
-            event.preventDefault();
-            registerModal.classList.add("open");
+    const observer = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+            if (!entry.isIntersecting) {
+                return;
+            }
+
+            const item = entry.target;
+            observer.unobserve(item);
+            item.classList.add("is-visible");
+
+            // Drop the reveal classes so hover effects have no delay
+            setTimeout(function() {
+                item.classList.remove("reveal-item", "is-visible");
+            }, 1000);
         });
-    }
+    }, { threshold: 0.15 });
 
-    if (registerClose) {
-        registerClose.addEventListener("click", function() {
-            registerModal.classList.remove("open");
-        });
-    }
-
-    // Close when clicking outside the modal content
-    registerModal.addEventListener("click", function(event) {
-        if (event.target === registerModal) {
-            registerModal.classList.remove("open");
-        }
-    });
-
-    // Close with Escape key
-    document.addEventListener("keydown", function(event) {
-        if (event.key === "Escape") {
-            registerModal.classList.remove("open");
-        }
+    items.forEach(function(item) {
+        item.classList.add("reveal-item");
+        observer.observe(item);
     });
 }
+
+
+// The browser may jump to the #anchor after load; keep the page at the top
+window.addEventListener("load", function() {
+    window.scrollTo({ top: 0, behavior: "instant" });
+});
 
 
 // ===================================
@@ -609,13 +633,17 @@ document.addEventListener("DOMContentLoaded", function() {
 
     setLanguage(savedLanguage);
 
-    // Navigation
-    showPage(window.location.hash.substring(1) || "home");
+    // Navigation (instant scroll: the browser's own jump to the #anchor is undone)
+    if ("scrollRestoration" in history) {
+        history.scrollRestoration = "manual";
+    }
+
+    showPage(window.location.hash.substring(1) || "home", true);
 
     // Other features
     initTheme();
     initMobileMenu();
     initFooterYear();
-    initRegisterModal();
+    initReveal();
 
 });

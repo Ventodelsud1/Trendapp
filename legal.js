@@ -12,9 +12,9 @@ const legalTranslations = {
     p3Title: "3. How information is used",
     p3: "Information may be used to reply to messages, maintain the website and help protect it from misuse. We do not sell personal information.",
     p4Title: "4. Cookies and local storage",
-    p4: "The website uses browser local storage to remember settings such as language and display theme. Local storage is saved in your browser and is different from cookies. The code provided for this website does not show an analytics or advertising cookie tool. Hosting services and external resources may still process technical connection data.",
+    p4: "The website uses browser local storage to remember your language and display theme. Local storage stays in your browser and is not a cookie. We do not use analytics or advertising cookies.",
     p5Title: "5. External links and services",
-    p5: "The website may link to external websites or use external resources. Those services have their own privacy practices, which we do not control. Please check their policies when using them.",
+    p5: "The website may link to external websites. The website loads fonts from Google Fonts, so your browser connects to Google servers, which receive your IP address. These services have their own privacy practices, which we do not control.",
     p6Title: "6. Security and retention",
     p6: "We take reasonable steps to protect information. Information is kept only for as long as reasonably needed for the purpose for which it was provided or as required by applicable law.",
     p7Title: "7. Contact",
@@ -48,9 +48,9 @@ const legalTranslations = {
     p3Title: "3. Использование информации",
     p3: "Информация может использоваться для ответа на сообщения, поддержки работы сайта и защиты от злоупотреблений. Мы не продаём персональные данные.",
     p4Title: "4. Cookies и Local Storage",
-    p4: "Сайт использует Local Storage браузера для сохранения настроек, например языка и темы оформления. Local Storage хранится в браузере и отличается от cookies. В предоставленном коде сайта не обнаружен инструмент аналитических или рекламных cookies. При этом хостинг и внешние ресурсы могут обрабатывать технические данные соединения.",
+    p4: "Сайт использует Local Storage браузера, чтобы запоминать выбранный язык и тему оформления. Эти данные хранятся только в вашем браузере и не являются cookies. Мы не используем аналитические и рекламные cookies.",
     p5Title: "5. Внешние ссылки и сервисы",
-    p5: "На сайте могут быть ссылки на сторонние сайты или внешние ресурсы. У таких сервисов есть собственные правила конфиденциальности, которые мы не контролируем. Рекомендуем ознакомиться с ними при использовании этих сервисов.",
+    p5: "Сайт может содержать ссылки на сторонние сайты. Сайт загружает шрифты из Google Fonts, поэтому ваш браузер подключается к серверам Google, которые получают ваш IP-адрес. У этих сервисов собственные правила конфиденциальности, которые мы не контролируем.",
     p6Title: "6. Безопасность и хранение",
     p6: "Мы принимаем разумные меры для защиты информации. Данные хранятся столько, сколько это необходимо для цели их предоставления или требуется применимым законодательством.",
     p7Title: "7. Контакты",
@@ -84,9 +84,9 @@ const legalTranslations = {
     p3Title: "3. Məlumatlardan istifadə",
     p3: "Məlumatlar mesajlara cavab vermək, saytın işləməsini təmin etmək və sui-istifadənin qarşısını almaq üçün istifadə oluna bilər. Şəxsi məlumatları satmırıq.",
     p4Title: "4. Kukilər və Local Storage",
-    p4: "Sayt dil və görünüş mövzusu kimi seçimləri yadda saxlamaq üçün brauzerin Local Storage funksiyasından istifadə edir. Local Storage brauzerdə saxlanılır və kukilərdən fərqlidir. Təqdim edilmiş sayt kodunda analitika və ya reklam kukiləri aləti aşkar edilməyib. Bununla belə, hostinq və xarici resurslar texniki bağlantı məlumatlarını emal edə bilər.",
+    p4: "Sayt seçdiyiniz dili və görünüş mövzusunu yadda saxlamaq üçün brauzerin Local Storage funksiyasından istifadə edir. Bu məlumatlar yalnız brauzerinizdə saxlanılır və kuki deyil. Biz analitika və ya reklam kukilərindən istifadə etmirik.",
     p5Title: "5. Xarici keçidlər və xidmətlər",
-    p5: "Saytda xarici saytlara keçidlər və resurslar ola bilər. Bu xidmətlərin bizim nəzarət etmədiyimiz öz məxfilik qaydaları var. Onlardan istifadə edərkən həmin qaydalarla tanış olun.",
+    p5: "Saytda xarici saytlara keçidlər ola bilər. Sayt şriftləri Google Fonts xidmətindən yükləyir, buna görə brauzeriniz Google serverlərinə qoşulur və onlar IP ünvanınızı alır. Bu xidmətlərin bizim nəzarət etmədiyimiz öz məxfilik qaydaları var.",
     p6Title: "6. Təhlükəsizlik və saxlanma",
     p6: "Məlumatları qorumaq üçün ağlabatan tədbirlər görürük. Məlumatlar təqdim edilmə məqsədi üçün zəruri olduğu müddətdə və ya qanunla tələb edilən müddətdə saxlanılır.",
     p7Title: "7. Əlaqə",
@@ -120,9 +120,9 @@ const legalTranslations = {
     p3Title: "3. Bilgilerin kullanımı",
     p3: "Bilgiler mesajlara yanıt vermek, web sitesini sürdürmek ve kötüye kullanımı önlemeye yardımcı olmak için kullanılabilir. Kişisel bilgileri satmayız.",
     p4Title: "4. Çerezler ve Local Storage",
-    p4: "Web sitesi, dil ve görünüm teması gibi ayarları hatırlamak için tarayıcının Local Storage özelliğini kullanır. Local Storage tarayıcıda saklanır ve çerezlerden farklıdır. Sağlanan web sitesi kodunda analiz veya reklam çerezi aracı görülmemektedir. Bununla birlikte barındırma hizmetleri ve harici kaynaklar teknik bağlantı verilerini işleyebilir.",
+    p4: "Web sitesi, seçtiğiniz dili ve görünüm temasını hatırlamak için tarayıcının Local Storage özelliğini kullanır. Bu veriler yalnızca tarayıcınızda saklanır ve çerez değildir. Analiz veya reklam çerezleri kullanmıyoruz.",
     p5Title: "5. Harici bağlantılar ve hizmetler",
-    p5: "Web sitesi harici sitelere bağlantılar veya dış kaynaklar içerebilir. Bu hizmetlerin kontrol etmediğimiz kendi gizlilik uygulamaları vardır. Kullanırken ilgili politikalarını inceleyin.",
+    p5: "Web sitesi harici sitelere bağlantılar içerebilir. Web sitesi yazı tiplerini Google Fonts üzerinden yükler; bu nedenle tarayıcınız Google sunucularına bağlanır ve bu sunucular IP adresinizi alır. Bu hizmetlerin kontrol etmediğimiz kendi gizlilik uygulamaları vardır.",
     p6Title: "6. Güvenlik ve saklama",
     p6: "Bilgileri korumak için makul önlemler alırız. Bilgiler, sağlanma amacı için gerekli olduğu sürece veya yürürlükteki yasalar gerektirdiği müddetçe saklanır.",
     p7Title: "7. İletişim",
@@ -147,9 +147,10 @@ const legalTranslations = {
 document.addEventListener("DOMContentLoaded", () => {
   const buttons = document.querySelectorAll(".languages button");
 
-  let language = "en";
+  // Same storage keys as the main site (script.js)
+  let language = "az";
   try {
-    language = localStorage.getItem("trendapp-group-language") || "en";
+    language = localStorage.getItem("trendapp-language") || "az";
   } catch (error) {}
 
   function setLanguage(lang) {
@@ -163,10 +164,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
     buttons.forEach((button) => {
       button.classList.toggle("active", button.dataset.lang === lang);
+      button.setAttribute("aria-pressed", button.dataset.lang === lang ? "true" : "false");
     });
 
     try {
-      localStorage.setItem("trendapp-group-language", lang);
+      localStorage.setItem("trendapp-language", lang);
     } catch (error) {}
   }
 
