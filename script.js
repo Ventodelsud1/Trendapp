@@ -328,11 +328,12 @@ const translations = {
 // ===================================
 
 function setLanguage(language) {
-    const dictionary = translations[language];
-
-    if (!dictionary) {
-        return;
+    // Only accept known languages (ignore anything else found in storage)
+    if (!Object.prototype.hasOwnProperty.call(translations, language)) {
+        language = "az";
     }
+
+    const dictionary = translations[language];
 
     document.documentElement.lang = language;
 

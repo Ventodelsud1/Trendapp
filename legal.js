@@ -154,7 +154,11 @@ document.addEventListener("DOMContentLoaded", () => {
   } catch (error) {}
 
   function setLanguage(lang) {
-    const dictionary = legalTranslations[lang] || legalTranslations.en;
+    // Only accept known languages (ignore anything else found in storage)
+    if (!Object.prototype.hasOwnProperty.call(legalTranslations, lang)) {
+      lang = "az";
+    }
+    const dictionary = legalTranslations[lang];
     document.documentElement.lang = lang;
 
     document.querySelectorAll("[data-i18n]").forEach((element) => {
