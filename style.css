@@ -526,12 +526,24 @@ button {
     .about { padding: 45px 7%; }
     .about h2 { font-size: 30px; }
 }
-@media (max-width: 380px) {
-    .logo { font-size: 23px; }
-    .header-right { gap: 5px; }
-    .languages button { padding: 6px; }
+@media (max-width: 400px) {
+    .header { padding: 0 12px; }
+    .logo { font-size: 23px; flex-shrink: 0; }
+    .header-right { gap: 4px; margin-right: 6px; min-width: 0; }
+    .languages { padding-right: 4px; }
+    .languages button { padding: 6px 5px; font-size: 11px; }
+    .theme-toggle { width: 36px; height: 36px; font-size: 18px; flex-shrink: 0; }
+    .menu-toggle { flex-shrink: 0; padding: 0 2px; }
     .hero h1 { font-size: 37px; }
 }
+@media (max-width: 340px) {
+    .logo { font-size: 20px; }
+    .languages button { padding: 5px 3px; }
+}
+/* Never let the page scroll sideways on phones */
+html, body { overflow-x: clip; }
+/* Make taps on buttons instant and reliable on touch screens */
+button, a { touch-action: manipulation; }
 /* PAGE NAVIGATION */
 .page {
     display: none;
